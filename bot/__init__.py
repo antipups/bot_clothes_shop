@@ -1,1 +1,2 @@
-from bot.services import start
+from bot.services import start, categories
+

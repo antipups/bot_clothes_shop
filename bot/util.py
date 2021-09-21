@@ -83,3 +83,16 @@ def delete_message(chat_id: int,
                            message_id=message_id)
     except Exception as e:
         logger.error(f'Не удалось удалить сообщение из-за ошибки \n {e}')
+
+
+def callback_handler(message: CallbackQuery, callback: str) -> bool:
+    return message.data.startswith(callback[:-2])
+
+
+def category_tree(current_category_id: str) -> str:
+    result = Messages.Admin.Categories.EnterNewCategory
+    if current_category_id:
+        result += '\n🧭 Вы здесь: <b>{}</b>'
+        return result.format(' -> '.join(category.title for category in db_util.CategoryWork().get_all_parents(category_id=current_category_id)[::-1]))
+    else:
+        return result

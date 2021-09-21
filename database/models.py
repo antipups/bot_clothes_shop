@@ -48,7 +48,7 @@ class Categories(BaseModel):
     """
     parent_id = peewee.IntegerField(null=True,
                                     help_text='Айди категории (если это подкатегория)')
-    title = peewee.CharField(max_length=128,
+    title = peewee.CharField(max_length=Constants.LengthCategoryTitle,
                              help_text='Название категории')
     description = peewee.TextField(null=True,
                                    help_text='Описание категории, возможно будет не использоваться в боте')

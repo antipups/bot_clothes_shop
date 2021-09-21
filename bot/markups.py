@@ -1,7 +1,9 @@
+from typing import Union
+
 import database.util as db_util
 from telebot.types import ReplyKeyboardMarkup, ReplyKeyboardRemove, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from database.config import Constants as db_constants
-from bot.config import Button, Keyboard, Constants
+from bot.config import Button, Keyboard, Constants, Callbacks
 from copy import deepcopy
 
 
@@ -38,5 +40,35 @@ def _reply_markup(keyboard: list = [],
     return markup
 
 
+def back() -> ReplyKeyboardMarkup:
+    return _reply_markup(back_=True)
+
+
 def start_menu(chat_id: int) -> ReplyKeyboardMarkup:
-    return _reply_markup(keyboard=Keyboard.StartMenuAdmin if db_util.is_admin(chat_id=chat_id) else Keyboard.StartMenuUsual)
+    return _reply_markup(keyboard=Keyboard.StartMenuAdmin if db_util.UsersWork.is_admin(chat_id=chat_id) else Keyboard.StartMenuUsual)
+
+
+def category_menu() -> ReplyKeyboardMarkup:
+    return _reply_markup(keyboard=Keyboard.CategoryMenu,
+                         main_menu_=True)
+
+
+def categories(callback: str, parent_id: Union[str, int] = 0):
+    markup = InlineKeyboardMarkup(row_width=2)
+    buttons = []
+
+    if parent_id == -1:  # при добавлении категории давать доступ к добавлению в главный список
+        markup.add(InlineKeyboardButton(text='Главная категория',
+                                        callback_data=callback.format(0)))
+        parent_id = None
+
+    categories_list: list[db_util.Categories] = db_util.CategoryWork.get_categories(parent_id=parent_id)
+    for category in categories_list:
+        buttons.append(InlineKeyboardButton(text=category.title,
+                                            callback_data=callback.format(category.id)))
+
+    markup.add(*buttons)
+    markup.add(InlineKeyboardButton(text=Button.Direction.Back,
+                                    callback_data=callback.format('back')))
+
+    return markup

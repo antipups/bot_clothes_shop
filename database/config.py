@@ -14,3 +14,5 @@ class Constants:
 
     Statuses = (StatusTitles.Admin,
                 StatusTitles.Usual)
+
+    LengthCategoryTitle = 32
