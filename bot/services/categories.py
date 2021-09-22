@@ -1,3 +1,4 @@
+from bot.services.categories_search import choise_category
 from bot.util import *
 from bot.services import start
 from bot.validators import Validator
@@ -53,33 +54,17 @@ def choise_category_to_add(message: Message):
                             value=None)
     send_message(chat_id=chat_id,
                  text=Messages.Admin.Categories.EnterNewCategory,
-                 reply_markup=markups.categories(parent_id=-1,
-                                                 callback=Callbacks.Category.Add))
+                 reply_markup=markups.categories(callback=Callbacks.Category.Add))
 
 
 @bot.callback_query_handler(func=lambda message: callback_handler(message, Callbacks.Category.Add))
 def write_new_category(message: CallbackQuery):
-    chat_id, text, message_id = get_info_from_message(message=message,
-                                                      callback_str=Callbacks.Category.Remove)
-    parent_id = db_util.SessionWork.get(chat_id=chat_id,
-                                        key='parent_id')
-    if text == 'back' and not parent_id:
+    chat_id, text, message_id = get_info_from_message(message=message)
+    status = choise_category(message=message,
+                             callback=Callbacks.Category.Add)
+    if status == -1:
         categories_menu(message=message)
-        return
-
-    elif text == 'back':
-        text = db_util.CategoryWork.get_category(category_id=parent_id).parent_id
-
-    db_util.SessionWork.set(chat_id=chat_id,
-                            key='parent_id',
-                            value=text)
-    if db_util.CategoryWork.get_categories(parent_id=text):
-        bot.edit_message_text(chat_id=chat_id,
-                              message_id=message_id,
-                              text=category_tree(current_category_id=text),
-                              reply_markup=markups.categories(parent_id=text,
-                                                              callback=Callbacks.Category.Add))
-    else:
+    elif status == 1:
         get_title_category(chat_id=chat_id)
 
 

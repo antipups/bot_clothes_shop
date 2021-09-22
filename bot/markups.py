@@ -53,14 +53,12 @@ def category_menu() -> ReplyKeyboardMarkup:
                          main_menu_=True)
 
 
-def categories(callback: str, parent_id: Union[str, int] = 0):
+def categories(callback: str, parent_id: Union[str, int] = None):
     markup = InlineKeyboardMarkup(row_width=2)
     buttons = []
 
-    if parent_id == -1:  # при добавлении категории давать доступ к добавлению в главный список
-        markup.add(InlineKeyboardButton(text='Главная категория',
-                                        callback_data=callback.format(0)))
-        parent_id = None
+    markup.add(InlineKeyboardButton(text='Добавить сюда',
+                                    callback_data=callback.format(f'{parent_id}_1')))
 
     categories_list: list[db_util.Categories] = db_util.CategoryWork.get_categories(parent_id=parent_id)
     for category in categories_list:

@@ -89,10 +89,27 @@ def callback_handler(message: CallbackQuery, callback: str) -> bool:
     return message.data.startswith(callback[:-2])
 
 
-def category_tree(current_category_id: str) -> str:
+def category_tree(current_category_id: str, last_selected: bool = False) -> str:
+    """
+        Вывод злебных крошек категории
+    :param current_category_id: текущий айди категории
+    :param last_selected: выделять ли последнюю категорию как выделенную
+    :return: список категорий
+    """
     result = Messages.Admin.Categories.EnterNewCategory
+
     if current_category_id:
-        result += '\n🧭 Вы здесь: <b>{}</b>'
-        return result.format(' -> '.join(category.title for category in db_util.CategoryWork().get_all_parents(category_id=current_category_id)[::-1]))
-    else:
-        return result
+        if current_category_id == 'None':
+            return Messages.Admin.Categories.SelectedCategory.format('Главная категория')
+
+        categories = list(category.title for category in db_util.CategoryWork().get_all_parents(category_id=current_category_id)[::-1])
+
+        if last_selected:
+            categories[-1] = '<u>' + categories[-1] + '</u>'
+            result = Messages.Admin.Categories.SelectedCategory.format(' -> '.join(categories))
+
+        else:
+            result += '\n🧭 Вы здесь: <b>{}</b>'
+            result = result.format(' -> '.join(categories))
+
+    return result
