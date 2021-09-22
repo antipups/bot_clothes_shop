@@ -57,8 +57,15 @@ def categories(callback: str, parent_id: Union[str, int] = None):
     markup = InlineKeyboardMarkup(row_width=2)
     buttons = []
 
-    markup.add(InlineKeyboardButton(text='Добавить сюда',
-                                    callback_data=callback.format(f'{parent_id}_1')))
+    if callback == Callbacks.Category.Add:
+        markup.add(InlineKeyboardButton(text=Button.CategoryManipulation.Add,
+                                        callback_data=callback.format(f'{parent_id}_1')))
+    elif callback == Callbacks.Category.Remove and parent_id:
+        markup.add(InlineKeyboardButton(text=Button.CategoryManipulation.Remove,
+                                        callback_data=callback.format(f'{parent_id}_1')))
+    elif callback == Callbacks.Category.Change and parent_id:
+        markup.add(InlineKeyboardButton(text=Button.CategoryManipulation.Change,
+                                        callback_data=callback.format(f'{parent_id}_1')))
 
     categories_list: list[db_util.Categories] = db_util.CategoryWork.get_categories(parent_id=parent_id)
     for category in categories_list:

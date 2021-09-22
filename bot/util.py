@@ -89,14 +89,14 @@ def callback_handler(message: CallbackQuery, callback: str) -> bool:
     return message.data.startswith(callback[:-2])
 
 
-def category_tree(current_category_id: str, last_selected: bool = False) -> str:
+def category_tree(current_category_id: str, text: str, last_selected: bool = False) -> str:
     """
         Вывод злебных крошек категории
     :param current_category_id: текущий айди категории
     :param last_selected: выделять ли последнюю категорию как выделенную
     :return: список категорий
     """
-    result = Messages.Admin.Categories.EnterNewCategory
+    result = text
 
     if current_category_id:
         if current_category_id == 'None':

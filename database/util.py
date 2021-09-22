@@ -87,11 +87,18 @@ class CategoryWork:
     def get_categories(parent_id: Union[int, str] = None) -> list:
         return Categories.select().where(Categories.parent_id == parent_id)
 
-    def get_all_parents(self, category_id: str) -> list:
+    def get_all_parents(self, category_id: Union[str, int]) -> list:
         if category := Categories.get_by_id(category_id):
             categories = [category]
             if category.parent_id:
                 categories += self.get_all_parents(category_id=category.parent_id)
+        return categories
+
+    def get_all_child(self, category_id: Union[str, int]):
+        if category := Categories.get_by_id(category_id):
+            categories = [category]
+            for category in self.get_categories(parent_id=category.id):
+                categories += self.get_all_child(category_id=category.id)
         return categories
 
     @staticmethod
@@ -99,6 +106,18 @@ class CategoryWork:
         Categories(parent_id=parent_id,
                    title=title).save()
 
+    def remove_category(self, category_id: int):
+        childs = self.get_all_child(category_id=category_id)
+        Categories.get_by_id(category_id).delete_instance()
+        for child in childs:
+            child.delete_instance()
+
+    @staticmethod
+    def change_category(category_id: Union[str, int], new_title: str):
+        category: Categories = Categories.get_by_id(category_id)
+        category.title = new_title
+        category.save()
+
 
 if __name__ == '__main__':
-    print(CategoryWork().get_all_parents(4))
+    ...

@@ -157,3 +157,31 @@
 2021-09-22 13:54:46.602 | INFO     | bot.util:start_bot:20 - Bot Started
 2021-09-22 13:56:33.667 | SUCCESS  | database.util:create_tables:12 - Success create all tables
 2021-09-22 13:56:33.667 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 14:00:48.602 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 14:00:48.602 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 14:05:54.272 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 14:05:54.272 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 14:06:14.018 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 14:06:14.018 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 14:06:39.770 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 14:06:39.770 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 14:34:58.952 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 14:34:58.952 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 14:43:41.384 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 14:43:41.384 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 14:44:39.298 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 14:44:39.298 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 14:47:20.864 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 14:47:20.864 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 15:36:00.654 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 15:36:00.655 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 15:36:19.188 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 15:36:19.188 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 15:36:49.592 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 15:36:49.592 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 15:37:03.167 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 15:37:03.167 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 15:37:11.728 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 15:37:11.728 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 15:37:39.390 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 15:37:39.391 | INFO     | bot.util:start_bot:20 - Bot Started

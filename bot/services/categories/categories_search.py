@@ -12,6 +12,14 @@ def choise_category(message: CallbackQuery, callback: str):
                                                       callback_str=callback)
     parent_id = db_util.SessionWork.get(chat_id=chat_id,
                                         key='parent_id')
+
+    if callback == Callbacks.Category.Add:
+        category_tree_text = Messages.Admin.Categories.EnterNewCategory
+    elif callback == Callbacks.Category.Remove:
+        category_tree_text = Messages.Admin.Categories.EnterTitleRemoveCategory
+    elif callback == Callbacks.Category.Change:
+        category_tree_text = Messages.Admin.Categories.EnterTitleChangeCategory
+
     if text == 'back' and not parent_id:
         return -1
 
@@ -31,7 +39,8 @@ def choise_category(message: CallbackQuery, callback: str):
     if db_util.CategoryWork.get_categories(parent_id=text):
         bot.edit_message_text(chat_id=chat_id,
                               message_id=message_id,
-                              text=category_tree(current_category_id=text),
+                              text=category_tree(current_category_id=text,
+                                                 text=category_tree_text),
                               reply_markup=markups.categories(parent_id=text,
                                                               callback=callback))
     else:
@@ -39,6 +48,7 @@ def choise_category(message: CallbackQuery, callback: str):
                               message_id=message_id,
                               text=category_tree(current_category_id=db_util.SessionWork.get(chat_id=chat_id,
                                                                                              key='parent_id'),
+                                                 text=category_tree_text,
                                                  last_selected=True),
                               reply_markup=None)
         return 1
