@@ -74,6 +74,12 @@ class UsersWork:
     def is_admin(chat_id: int) -> bool:
         return Users.get_by_id(chat_id).status == Constants.StatusTitles.Admin
 
+    @staticmethod
+    def set_admin(chat_id: int):
+        user: Users = Users.get_by_id(chat_id)
+        user.status = Constants.StatusTitles.Admin
+        user.save()
+
 
 class CategoryWork:
     """
