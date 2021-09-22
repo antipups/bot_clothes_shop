@@ -19,6 +19,8 @@ def choise_category(message: CallbackQuery, callback: str):
         category_tree_text = Messages.Admin.Categories.EnterTitleRemoveCategory
     elif callback == Callbacks.Category.Change:
         category_tree_text = Messages.Admin.Categories.EnterTitleChangeCategory
+    elif callback == Callbacks.Category.CreatePost:
+        category_tree_text = Messages.Admin.CreatePost.EnterCategory
 
     if text == 'back' and not parent_id:
         return -1

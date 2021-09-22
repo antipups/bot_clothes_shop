@@ -5,7 +5,7 @@ from bot.validators import Validator
 
 
 @bot.message_handler(func=lambda message: message.text == Button.CategoryMenu.Add and
-                     message.from_user.id in Constants.Telegram.Admins)
+                     db_util.UsersWork.is_admin(message.from_user.id))
 def choise_category_to_add(message: Message):
     chat_id, text, message_id = get_info_from_message(message=message)
     db_util.SessionWork.set(chat_id=chat_id,

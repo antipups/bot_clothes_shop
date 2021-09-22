@@ -2,7 +2,7 @@ from bot.util import *
 
 
 @bot.message_handler(func=lambda message: message.text == Button.StartMenuAdmin.Categories and
-                                          message.from_user.id in Constants.Telegram.Admins)
+                                          db_util.UsersWork.is_admin(message.from_user.id))
 def categories_menu(message: Message):
     chat_id, text, message_id = get_info_from_message(message=message)
     send_message(chat_id=chat_id,

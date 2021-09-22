@@ -16,3 +16,10 @@ class Constants:
                 StatusTitles.Usual)
 
     LengthCategoryTitle = 32
+
+    LengthPostTitle = 32
+    LengthPostDescription = 256
+    LengthPostPrice = 10
+    LengthPostPhone = 20
+    LengthPostUsername = 32
+

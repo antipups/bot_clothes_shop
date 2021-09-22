@@ -58,8 +58,8 @@ class Pictures(BaseModel):
     """
         Таблица с картинками
     """
-    image = peewee.CharField(max_length=256,
-                             help_text='FILE ID в телеграмме')
+    file_id = peewee.CharField(max_length=256,
+                               help_text='FILE ID в телеграмме')
 
 
 class Post(BaseModel):
@@ -69,14 +69,19 @@ class Post(BaseModel):
     category_id = peewee.ForeignKeyField(Categories,
                                          on_delete='CASCADE',
                                          help_text='Категория продукта')
-    title = peewee.CharField(max_length=255,
+    title = peewee.CharField(max_length=Constants.LengthPostTitle,
                              help_text='Название объявления')
-    description = peewee.TextField(help_text='Описание продукта')
+    description = peewee.CharField(max_length=Constants.LengthPostDescription,
+                                   help_text='Описание продукта',)
     price = peewee.CharField(help_text='цена за товар, цифра и валюта',
-                             max_length=255)
+                             max_length=Constants.LengthPostPrice)
     pictures = peewee.ManyToManyField(Pictures,
                                       backref='posts',
                                       on_delete='CASCADE')
+    phone_number = peewee.CharField(max_length=Constants.LengthPostPhone,
+                                    help_text='Номер телефона',)
+    username = peewee.CharField(max_length=Constants.LengthPostUsername,
+                                help_text='Имя пользователя')
 
 
 PostPictures = Post.pictures.get_through_model()

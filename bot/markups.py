@@ -40,8 +40,9 @@ def _reply_markup(keyboard: list = [],
     return markup
 
 
-def back() -> ReplyKeyboardMarkup:
-    return _reply_markup(back_=True)
+def back(continue_: bool = False) -> ReplyKeyboardMarkup:
+    return _reply_markup(back_=True,
+                         continue_=continue_)
 
 
 def start_menu(chat_id: int) -> ReplyKeyboardMarkup:
@@ -77,3 +78,19 @@ def categories(callback: str, parent_id: Union[str, int] = None):
                                     callback_data=callback.format('back')))
 
     return markup
+
+
+def phone_number():
+    return _reply_markup(keyboard=[[KeyboardButton(text=Button.CreatePost.PhoneNumber,
+                                                   request_contact=True)]],
+                         back_=True)
+
+
+def username():
+    return _reply_markup(keyboard=[[KeyboardButton(text=Button.CreatePost.Username)]],
+                         back_=True)
+
+
+def create_post():
+    return _reply_markup(keyboard=Keyboard.CreatePost,
+                         main_menu_=True)

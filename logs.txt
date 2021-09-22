@@ -209,3 +209,673 @@
 2021-09-22 17:30:26.827 | INFO     | bot.util:start_bot:20 - Bot Started
 2021-09-22 17:31:04.082 | SUCCESS  | database.util:create_tables:12 - Success create all tables
 2021-09-22 17:31:04.082 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 17:46:15.894 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 17:46:15.894 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 17:46:53.411 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 17:46:53.411 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 17:48:10.476 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 17:48:10.477 | INFO     | bot:<module>:4 - Import all services
+2021-09-22 17:48:10.507 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 17:48:10.507 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 17:59:15.537 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 17:59:15.538 | INFO     | bot:<module>:4 - Import services
+2021-09-22 17:59:15.578 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 17:59:15.578 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:00:30.369 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:00:30.369 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:00:30.402 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:00:30.402 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:00:34.176 | ERROR    | bot.services.add_post:start_create_post:12 - Oups...
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x104db5820>
+    └ <WorkerThread(WorkerThread2, started daemon 6138408960)>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x1055445e0>
+    └ <WorkerThread(WorkerThread2, started daemon 6138408960)>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x105bde580>,)
+    └ <function start_create_post at 0x105b5b8b0>
+
+> File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/add_post.py", line 10, in start_create_post
+    chat_id, text = get_info_from_message(message=message)
+                    │                             └ <telebot.types.Message object at 0x105bde580>
+                    └ <function get_info_from_message at 0x105b503a0>
+
+ValueError: too many values to unpack (expected 2)
+2021-09-22 18:01:06.380 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:01:06.380 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:01:06.415 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:01:06.415 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:01:14.985 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:01:14.985 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:01:15.018 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:01:15.018 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:01:32.048 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:01:32.048 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:01:32.079 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:01:32.079 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:01:36.659 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x102293580>,), kwargs={})
+2021-09-22 18:01:36.660 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 18:02:11.067 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:02:11.067 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:02:11.099 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:02:11.099 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:02:13.582 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x105c9a5b0>,), kwargs={})
+2021-09-22 18:02:13.584 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 18:02:33.759 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:02:33.759 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:02:33.792 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:02:33.792 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:02:35.200 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=("{'content_type': 'text', 'id': 30950, 'message_id': 30950, 'from_user': {'id': 704369002, 'is_bot': False, 'first_name': 'Никита', 'username': 'moonvent', 'last_name': None, 'language_code': 'ru', 'can_join_groups': None, 'can_read_all_group_messages': None, 'supports_inline_queries': None}, 'date': 1632322955, 'chat': {'id': 704369002, 'type': 'private', 'title': None, 'username': 'moonvent', 'first_name': 'Никита', 'last_name': None, 'photo': None, 'bio': None, 'description': None, 'invite_link': None, 'pinned_message': None, 'permissions': None, 'slow_mode_delay': None, 'message_auto_delete_time': None, 'sticker_set_name': None, 'can_set_sticker_set': None, 'linked_chat_id': None, 'location': None}, 'sender_chat': None, 'forward_from': None, 'forward_from_chat': None, 'forward_from_message_id': None, 'forward_signature': None, 'forward_sender_name': None, 'forward_date': None, 'reply_to_message': None, 'via_bot': None, 'edit_date': None, 'media_group_id': None, 'author_signature': None, 'text': '🆕 Новое объявление', 'entities': None, 'caption_entities': None, 'audio': None, 'document': None, 'photo': None, 'sticker': None, 'video': None, 'video_note': None, 'voice': None, 'caption': None, 'contact': None, 'location': None, 'venue': None, 'animation': None, 'dice': None, 'new_chat_member': None, 'new_chat_members': None, 'left_chat_member': None, 'new_chat_title': None, 'new_chat_photo': None, 'delete_chat_photo': None, 'group_chat_created': None, 'supergroup_chat_created': None, 'channel_chat_created': None, 'migrate_to_chat_id': None, 'migrate_from_chat_id': None, 'pinned_message': None, 'invoice': None, 'successful_payment': None, 'connected_website': None, 'reply_markup': None, 'json': {'message_id': 30950, 'from': {'id': 704369002, 'is_bot': False, 'first_name': 'Никита', 'username': 'moonvent', 'language_code': 'ru'}, 'chat': {'id': 704369002, 'first_name': 'Никита', 'username': 'moonvent', 'type': 'private'}, 'date': 1632322955, 'text': '🆕 Новое объявление'}}",), kwargs={})
+2021-09-22 18:02:35.201 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 18:25:03.955 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:25:03.955 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:25:03.987 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:25:03.988 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:25:07.791 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1049858e0>,), kwargs={})
+2021-09-22 18:25:08.096 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 18:42:16.286 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104985400>,), kwargs={})
+2021-09-22 18:42:16.315 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 18:42:23.349 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:42:23.349 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:42:23.382 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:42:23.383 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:42:28.618 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1065a2850>,), kwargs={})
+2021-09-22 18:42:28.996 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 18:42:30.547 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1065a2f10>,), kwargs={})
+2021-09-22 18:42:30.570 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 18:43:19.042 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:43:19.042 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:43:19.072 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:43:19.072 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:43:23.428 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x104a55880>,), kwargs={})
+2021-09-22 18:43:23.721 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 18:43:24.538 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104a55670>,), kwargs={})
+2021-09-22 18:43:24.867 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 18:43:26.464 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x104a5cb50>,), kwargs={})
+2021-09-22 18:43:26.591 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 18:43:32.324 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104a5c550>,), kwargs={})
+2021-09-22 18:43:32.475 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 18:46:44.300 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:46:44.300 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:46:44.334 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:46:44.334 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:46:52.413 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x10295e910>,), kwargs={})
+2021-09-22 18:46:52.703 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 18:46:53.749 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x10295eb20>,), kwargs={})
+2021-09-22 18:47:04.754 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 18:47:04.754 | INFO     | bot:<module>:4 - Import services
+2021-09-22 18:47:04.786 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 18:47:04.786 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 18:47:08.836 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x104c56a00>,), kwargs={})
+2021-09-22 18:47:09.211 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 18:47:12.432 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104c56dc0>,), kwargs={})
+2021-09-22 18:47:12.648 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 18:47:39.366 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x104bc56d0>,), kwargs={})
+2021-09-22 18:47:39.662 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 18:47:43.938 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104c5ed00>,), kwargs={})
+2021-09-22 18:47:44.079 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 19:32:07.884 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 19:32:07.885 | INFO     | bot:<module>:4 - Import services
+2021-09-22 19:32:07.915 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 19:32:07.915 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 19:32:25.364 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x105cb0220>,), kwargs={})
+2021-09-22 19:32:25.666 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 19:32:26.629 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x105cb08b0>,), kwargs={})
+2021-09-22 19:32:26.793 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 19:32:28.009 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x105cb0310>,), kwargs={})
+2021-09-22 19:32:28.177 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 19:32:46.937 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 19:32:46.937 | INFO     | bot:<module>:4 - Import services
+2021-09-22 19:32:46.969 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 19:32:46.969 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 19:32:50.544 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1044301f0>,), kwargs={})
+2021-09-22 19:32:50.660 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 19:32:52.225 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x10441fbb0>,), kwargs={})
+2021-09-22 19:32:52.523 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 19:32:53.222 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x104430040>,), kwargs={})
+2021-09-22 19:32:53.366 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 19:32:56.160 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x10441fb50>,), kwargs={})
+2021-09-22 19:32:56.283 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 19:32:58.256 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x1044301f0>,), kwargs={})
+2021-09-22 19:32:58.469 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 19:59:47.432 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 19:59:47.433 | INFO     | bot:<module>:4 - Import services
+2021-09-22 19:59:47.461 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 19:59:47.461 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:03:54.348 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:03:54.349 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:03:54.384 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:03:54.384 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:04:09.316 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x104d21d60>,), kwargs={})
+2021-09-22 20:04:09.704 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:04:11.102 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104d4dd00>,), kwargs={})
+2021-09-22 20:04:11.243 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:04:12.407 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x104d219a0>,), kwargs={})
+2021-09-22 20:04:12.604 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:04:13.763 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x104d21a00>,), kwargs={})
+2021-09-22 20:04:13.890 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:04:14.644 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x104d21dc0>,), kwargs={})
+2021-09-22 20:04:14.837 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:05:20.295 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:05:20.295 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:05:20.329 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:05:20.329 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:05:22.547 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:05:22.547 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:05:22.586 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:05:22.586 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:06:21.475 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:06:21.475 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:06:21.512 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:06:21.512 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:06:29.129 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x103e15700>,), kwargs={})
+2021-09-22 20:06:29.282 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:06:38.975 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x103e15820>,), kwargs={})
+2021-09-22 20:06:39.097 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:06:54.455 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x103e15dc0>,), kwargs={})
+2021-09-22 20:07:02.968 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:07:02.968 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:07:02.998 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:07:02.998 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:07:10.503 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x110855eb0>,), kwargs={})
+2021-09-22 20:07:10.818 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:07:11.515 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x110855a90>,), kwargs={})
+2021-09-22 20:07:11.716 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:07:12.310 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x110855df0>,), kwargs={})
+2021-09-22 20:07:12.490 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:07:13.233 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x1108557c0>,), kwargs={})
+2021-09-22 20:07:13.393 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:07:28.096 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x110855760>,), kwargs={})
+2021-09-22 20:07:28.285 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:07:35.941 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x110855fa0>,), kwargs={})
+2021-09-22 20:08:24.054 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:08:24.054 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:08:24.094 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:08:24.094 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:08:26.853 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1064154f0>,), kwargs={})
+2021-09-22 20:08:26.977 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:08:27.711 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x105ffcd90>,), kwargs={})
+2021-09-22 20:08:27.848 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:08:28.293 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x106415700>,), kwargs={})
+2021-09-22 20:08:28.413 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:08:29.116 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x106378760>,), kwargs={})
+2021-09-22 20:08:29.253 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:08:41.624 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1063789a0>,), kwargs={})
+2021-09-22 20:08:41.793 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:08:47.488 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x10643a5b0>,), kwargs={})
+2021-09-22 20:09:12.857 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:09:12.858 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:09:12.890 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:09:12.890 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:09:16.791 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1069895e0>,), kwargs={})
+2021-09-22 20:09:16.954 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:09:18.431 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x106571e50>,), kwargs={})
+2021-09-22 20:09:18.542 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:09:18.956 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x106989640>,), kwargs={})
+2021-09-22 20:09:19.073 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:09:19.920 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x106976e20>,), kwargs={})
+2021-09-22 20:09:20.102 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:09:30.736 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x106571e50>,), kwargs={})
+2021-09-22 20:09:30.892 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:11:21.023 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:11:21.023 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:11:21.053 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:11:21.053 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:11:26.767 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x102341910>,), kwargs={})
+2021-09-22 20:11:26.949 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:11:28.296 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x102341d60>,), kwargs={})
+2021-09-22 20:11:28.527 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:11:28.862 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x102341820>,), kwargs={})
+2021-09-22 20:11:29.046 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:11:29.875 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x102341d60>,), kwargs={})
+2021-09-22 20:11:29.995 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:11:53.337 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:11:53.337 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:11:53.368 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:11:53.368 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:11:56.645 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x105d54be0>,), kwargs={})
+2021-09-22 20:11:56.764 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:11:57.521 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x105d54c40>,), kwargs={})
+2021-09-22 20:11:57.647 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:11:58.359 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x105d5ad90>,), kwargs={})
+2021-09-22 20:11:58.676 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:11:59.150 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x105d5af70>,), kwargs={})
+2021-09-22 20:11:59.296 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:12:08.806 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x105d548e0>,), kwargs={})
+2021-09-22 20:12:09.017 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:12:15.357 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x105d5a580>,), kwargs={})
+2021-09-22 20:12:15.467 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:12:20.983 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x105d5af70>,), kwargs={})
+2021-09-22 20:12:21.120 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:12:33.471 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x105d54c40>,), kwargs={})
+2021-09-22 20:12:33.596 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:13:49.911 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:13:49.911 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:13:49.948 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:13:49.948 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:14:03.725 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x102e0dfa0>,), kwargs={})
+2021-09-22 20:14:04.112 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:14:06.883 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x102e20eb0>,), kwargs={})
+2021-09-22 20:14:07.073 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:14:07.885 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x102e0dee0>,), kwargs={})
+2021-09-22 20:14:08.190 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:14:08.844 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x102e20fa0>,), kwargs={})
+2021-09-22 20:14:09.043 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:14:18.015 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102e201c0>,), kwargs={})
+2021-09-22 20:14:32.118 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:14:40.271 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102e0dfa0>,), kwargs={})
+2021-09-22 20:14:59.909 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:14:59.909 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:14:59.937 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:14:59.937 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:15:05.325 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x10605d520>,), kwargs={})
+2021-09-22 20:15:05.691 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:15:09.814 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1060808e0>,), kwargs={})
+2021-09-22 20:16:12.780 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:16:12.780 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:16:12.812 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:16:12.812 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:16:24.923 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1068ee5b0>,), kwargs={})
+2021-09-22 20:16:25.091 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:16:26.180 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1068dbdf0>,), kwargs={})
+2021-09-22 20:16:26.508 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:16:26.766 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x1068ee580>,), kwargs={})
+2021-09-22 20:16:26.917 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:16:27.474 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x1068ee610>,), kwargs={})
+2021-09-22 20:16:27.623 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:16:35.442 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1068dbe20>,), kwargs={})
+2021-09-22 20:16:35.651 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:16:37.208 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1068ee580>,), kwargs={})
+2021-09-22 20:16:37.345 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:16:38.685 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1068dbdc0>,), kwargs={})
+2021-09-22 20:16:38.828 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:16:41.123 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1068ee1c0>,), kwargs={})
+2021-09-22 20:16:41.142 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:44:26.768 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:44:26.769 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:44:26.947 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:44:26.947 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:45:06.276 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1047cd580>,), kwargs={})
+2021-09-22 20:45:06.447 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:47:09.257 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1047cd8b0>,), kwargs={})
+2021-09-22 20:47:09.401 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:47:10.029 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x1047cd730>,), kwargs={})
+2021-09-22 20:47:10.351 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:47:10.779 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x1047cd820>,), kwargs={})
+2021-09-22 20:47:10.900 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:47:22.819 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1047cde50>,), kwargs={})
+2021-09-22 20:47:26.415 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:47:29.900 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x104d0e1c0>,), kwargs={})
+2021-09-22 20:47:30.103 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:47:57.132 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:47:57.132 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:47:57.170 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:47:57.170 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:48:02.808 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x102a26370>,), kwargs={})
+2021-09-22 20:48:02.961 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:48:04.142 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x102a1fe80>,), kwargs={})
+2021-09-22 20:48:04.489 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:48:05.020 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x102a26400>,), kwargs={})
+2021-09-22 20:48:05.184 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:48:06.882 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x102a371c0>,), kwargs={})
+2021-09-22 20:48:07.064 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:48:16.190 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102a26cd0>,), kwargs={})
+2021-09-22 20:48:16.355 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:48:21.060 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102a375b0>,), kwargs={})
+2021-09-22 20:48:21.206 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:48:34.129 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:48:34.130 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:48:34.162 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:48:34.162 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:48:38.505 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x102a534c0>,), kwargs={})
+2021-09-22 20:48:38.636 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:48:40.510 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x102a2bd00>,), kwargs={})
+2021-09-22 20:48:40.665 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:48:40.979 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x102a53e80>,), kwargs={})
+2021-09-22 20:48:41.117 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:48:41.813 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x102a2bdc0>,), kwargs={})
+2021-09-22 20:48:41.982 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:48:49.276 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102a538b0>,), kwargs={})
+2021-09-22 20:48:49.440 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:48:50.921 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102a2bdc0>,), kwargs={})
+2021-09-22 20:48:51.071 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:48:54.016 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x102a53070>,), kwargs={})
+2021-09-22 20:54:31.198 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:54:31.198 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:54:31.228 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:54:31.228 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:54:38.909 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x104dae460>,), kwargs={})
+2021-09-22 20:54:39.055 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:54:40.055 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104db7880>,), kwargs={})
+2021-09-22 20:54:40.249 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:54:40.774 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x104daed00>,), kwargs={})
+2021-09-22 20:54:40.882 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:54:41.856 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x104db7910>,), kwargs={})
+2021-09-22 20:54:42.008 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:54:49.184 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x104daeca0>,), kwargs={})
+2021-09-22 20:54:49.343 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:54:52.203 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x104db7910>,), kwargs={})
+2021-09-22 20:54:52.324 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:54:58.408 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x104dae280>,), kwargs={})
+2021-09-22 20:54:58.573 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 20:55:11.512 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x104db7490>,), kwargs={})
+2021-09-22 20:55:11.653 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 20:56:23.895 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x104da7ca0>,), kwargs={})
+2021-09-22 20:56:23.918 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 20:56:36.821 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x104da7c10>,), kwargs={})
+2021-09-22 20:56:37.105 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:56:38.617 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104da7a90>,), kwargs={})
+2021-09-22 20:56:38.773 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:56:39.312 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x104db7880>,), kwargs={})
+2021-09-22 20:56:39.447 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:56:40.783 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x104da7eb0>,), kwargs={})
+2021-09-22 20:56:40.937 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:56:49.090 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x104daec40>,), kwargs={})
+2021-09-22 20:56:49.265 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:56:50.497 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x104da7b50>,), kwargs={})
+2021-09-22 20:56:50.701 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:56:54.878 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x104db7880>,), kwargs={})
+2021-09-22 20:56:55.014 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 20:57:03.607 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x104dae280>,), kwargs={})
+2021-09-22 20:57:03.626 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 20:57:32.448 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 20:57:32.448 | INFO     | bot:<module>:4 - Import services
+2021-09-22 20:57:32.489 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 20:57:32.489 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 20:57:37.717 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x10674b4c0>,), kwargs={})
+2021-09-22 20:57:37.828 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 20:57:39.545 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1067548b0>,), kwargs={})
+2021-09-22 20:57:39.686 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 20:57:40.423 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x10674bc10>,), kwargs={})
+2021-09-22 20:57:40.725 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 20:57:42.791 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x106743ac0>,), kwargs={})
+2021-09-22 20:57:42.942 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 20:57:51.401 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x106732eb0>,), kwargs={})
+2021-09-22 20:57:51.547 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:57:54.388 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x10674b940>,), kwargs={})
+2021-09-22 20:57:54.541 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 20:57:57.022 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x106754880>,), kwargs={})
+2021-09-22 20:57:57.212 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 20:58:21.171 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x10674b1c0>,), kwargs={})
+2021-09-22 20:58:21.291 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 21:02:20.469 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x106743be0>,), kwargs={})
+2021-09-22 21:02:20.605 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:02:32.516 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:02:32.517 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:02:32.546 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:02:32.546 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:02:37.053 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x104a93490>,), kwargs={})
+2021-09-22 21:02:37.226 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:02:38.488 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104a9c850>,), kwargs={})
+2021-09-22 21:02:38.855 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:02:39.062 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x104a8bbe0>,), kwargs={})
+2021-09-22 21:02:39.270 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:02:40.186 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x104a8ba30>,), kwargs={})
+2021-09-22 21:02:40.404 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:02:49.282 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x104a8bfd0>,), kwargs={})
+2021-09-22 21:02:49.454 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:02:50.621 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x104a93df0>,), kwargs={})
+2021-09-22 21:02:50.738 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:02:52.985 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x104a9c8b0>,), kwargs={})
+2021-09-22 21:02:53.195 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:02:53.920 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x104a9c850>,), kwargs={})
+2021-09-22 21:02:53.939 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 21:11:43.637 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:11:43.637 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:11:43.670 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:11:43.670 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:11:50.836 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x10609fa00>,), kwargs={})
+2021-09-22 21:11:51.118 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:11:52.680 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1060bad90>,), kwargs={})
+2021-09-22 21:11:52.838 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:11:53.266 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x10609f340>,), kwargs={})
+2021-09-22 21:11:53.423 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:11:54.091 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x10609f370>,), kwargs={})
+2021-09-22 21:11:54.235 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:12:02.498 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1060baa60>,), kwargs={})
+2021-09-22 21:12:02.673 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:12:03.945 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1060ba1c0>,), kwargs={})
+2021-09-22 21:12:04.089 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:12:06.595 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x1060baa60>,), kwargs={})
+2021-09-22 21:12:06.715 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:12:07.409 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x1060ba430>,), kwargs={})
+2021-09-22 21:12:07.431 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 21:12:29.024 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:12:29.024 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:12:29.056 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:12:29.057 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:12:33.248 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x10445beb0>,), kwargs={})
+2021-09-22 21:12:33.381 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:12:35.516 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x10445b520>,), kwargs={})
+2021-09-22 21:12:35.839 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:12:36.190 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x10445bca0>,), kwargs={})
+2021-09-22 21:12:36.366 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:12:37.736 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x10444c0a0>,), kwargs={})
+2021-09-22 21:12:37.867 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:12:45.842 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x10445b490>,), kwargs={})
+2021-09-22 21:12:45.989 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:12:47.429 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x10445bcd0>,), kwargs={})
+2021-09-22 21:12:47.556 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:12:50.277 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x10445b3d0>,), kwargs={})
+2021-09-22 21:12:50.429 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:12:51.647 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x10445b580>,), kwargs={})
+2021-09-22 21:13:28.224 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:13:28.224 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:13:28.256 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:13:28.256 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:13:30.862 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x105cd8e50>,), kwargs={})
+2021-09-22 21:13:30.981 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:13:32.278 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x105cd8ee0>,), kwargs={})
+2021-09-22 21:13:32.403 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:13:32.860 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x105cd8fd0>,), kwargs={})
+2021-09-22 21:13:33.000 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:13:34.416 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x105cd8640>,), kwargs={})
+2021-09-22 21:13:34.571 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:13:45.195 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x105cd85e0>,), kwargs={})
+2021-09-22 21:13:45.323 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:13:46.670 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x105cd8640>,), kwargs={})
+2021-09-22 21:13:46.852 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:13:48.758 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x105d8ac40>,), kwargs={})
+2021-09-22 21:13:49.005 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:13:49.652 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x105d8afd0>,), kwargs={})
+2021-09-22 21:13:59.942 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:13:59.943 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:13:59.976 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:13:59.976 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:14:04.103 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x106ca0e50>,), kwargs={})
+2021-09-22 21:14:04.258 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:14:06.081 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x106ca05e0>,), kwargs={})
+2021-09-22 21:14:06.236 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:14:06.873 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x106ca0430>,), kwargs={})
+2021-09-22 21:14:07.191 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:14:08.056 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x106d3ea00>,), kwargs={})
+2021-09-22 21:14:08.219 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:14:16.113 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x106d3e850>,), kwargs={})
+2021-09-22 21:14:16.246 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:14:17.373 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x106d3ebe0>,), kwargs={})
+2021-09-22 21:14:17.487 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:14:19.718 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x106d3e6a0>,), kwargs={})
+2021-09-22 21:14:19.858 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:14:20.709 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x106ca0e80>,), kwargs={})
+2021-09-22 21:14:20.957 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 21:14:52.161 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:14:52.161 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:14:52.191 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:14:52.191 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:15:00.028 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x102974e50>,), kwargs={})
+2021-09-22 21:15:00.382 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:15:01.505 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x102a228b0>,), kwargs={})
+2021-09-22 21:15:01.730 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:15:02.110 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x102a22f70>,), kwargs={})
+2021-09-22 21:15:02.251 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:15:03.609 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x102974430>,), kwargs={})
+2021-09-22 21:15:03.757 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:15:12.354 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102974ca0>,), kwargs={})
+2021-09-22 21:15:12.539 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:15:14.073 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102a22df0>,), kwargs={})
+2021-09-22 21:15:14.235 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:15:15.774 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x102974d60>,), kwargs={})
+2021-09-22 21:15:16.017 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:15:16.675 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x102974430>,), kwargs={})
+2021-09-22 21:15:16.852 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 21:53:16.492 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:53:16.492 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:53:16.664 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:53:16.664 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:53:25.345 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1029cd250>,), kwargs={})
+2021-09-22 21:53:25.465 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:53:26.228 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1029bc5e0>,), kwargs={})
+2021-09-22 21:53:26.412 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:53:27.286 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x1029cd8b0>,), kwargs={})
+2021-09-22 21:53:27.435 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:53:28.266 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x1029aebb0>,), kwargs={})
+2021-09-22 21:53:28.414 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:53:36.464 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1029d9670>,), kwargs={})
+2021-09-22 21:53:36.614 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:53:38.057 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1029d9b50>,), kwargs={})
+2021-09-22 21:53:38.174 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:53:41.581 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x1029d99d0>,), kwargs={})
+2021-09-22 21:53:41.721 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:53:43.060 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x1029bc610>,), kwargs={})
+2021-09-22 21:53:43.079 | DEBUG    | bot.services.add_post:set_username:217 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-22 21:53:43.351 | DEBUG    | bot.services.add_post:set_username:217 - Exiting 'get_preview_post' (result=None)
+2021-09-22 21:53:43.352 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 21:54:32.984 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:54:32.984 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:54:33.022 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:54:33.022 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:54:37.087 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x101dcc9a0>,), kwargs={})
+2021-09-22 21:54:37.207 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:54:38.476 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x101dcca30>,), kwargs={})
+2021-09-22 21:54:38.805 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:54:39.088 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x101dd3fd0>,), kwargs={})
+2021-09-22 21:54:39.201 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:54:39.630 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x101dcca60>,), kwargs={})
+2021-09-22 21:54:39.828 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:54:47.005 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x101d32c40>,), kwargs={})
+2021-09-22 21:54:47.136 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:54:48.289 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x101dcca00>,), kwargs={})
+2021-09-22 21:54:48.442 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:54:50.748 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x101dcca30>,), kwargs={})
+2021-09-22 21:54:50.891 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:54:51.787 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x101dd3f40>,), kwargs={})
+2021-09-22 21:54:51.800 | DEBUG    | bot.services.add_post:set_username:217 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-22 21:54:52.039 | DEBUG    | bot.services.add_post:set_username:217 - Exiting 'get_preview_post' (result=None)
+2021-09-22 21:54:52.040 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 21:55:39.191 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:55:39.191 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:55:39.226 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:55:39.227 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:55:42.290 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1068722e0>,), kwargs={})
+2021-09-22 21:55:42.404 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:55:43.991 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x106818f40>,), kwargs={})
+2021-09-22 21:55:44.282 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:55:44.614 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x106872370>,), kwargs={})
+2021-09-22 21:55:44.779 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:55:45.693 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x106820070>,), kwargs={})
+2021-09-22 21:55:45.829 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:55:54.203 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x105871130>,), kwargs={})
+2021-09-22 21:55:54.412 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:55:55.736 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x106818f10>,), kwargs={})
+2021-09-22 21:55:55.859 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:55:58.779 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x106872760>,), kwargs={})
+2021-09-22 21:55:58.910 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:55:59.680 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x106820070>,), kwargs={})
+2021-09-22 21:55:59.700 | DEBUG    | bot.services.add_post:set_username:217 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-22 21:56:00.024 | DEBUG    | bot.services.add_post:set_username:217 - Exiting 'get_preview_post' (result=None)
+2021-09-22 21:56:00.024 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 21:56:59.607 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:56:59.607 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:56:59.645 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:56:59.645 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:57:03.568 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1071f3100>,), kwargs={})
+2021-09-22 21:57:03.882 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:57:05.114 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1071f3160>,), kwargs={})
+2021-09-22 21:57:05.225 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:57:05.658 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x1071eca60>,), kwargs={})
+2021-09-22 21:57:05.773 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:57:06.422 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x1071f3370>,), kwargs={})
+2021-09-22 21:57:06.568 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:57:14.484 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1071ec9d0>,), kwargs={})
+2021-09-22 21:57:14.647 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:57:19.719 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1071f3310>,), kwargs={})
+2021-09-22 21:57:19.841 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:57:21.931 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x1071f3220>,), kwargs={})
+2021-09-22 21:57:22.056 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:57:23.280 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x1071eca00>,), kwargs={})
+2021-09-22 21:57:23.297 | DEBUG    | bot.services.add_post:set_username:217 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-22 21:57:23.622 | DEBUG    | bot.services.add_post:set_username:217 - Exiting 'get_preview_post' (result=None)
+2021-09-22 21:57:23.623 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 21:58:59.764 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 21:58:59.764 | INFO     | bot:<module>:4 - Import services
+2021-09-22 21:58:59.803 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 21:58:59.803 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 21:59:15.469 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x10499abb0>,), kwargs={})
+2021-09-22 21:59:15.588 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 21:59:17.280 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x10499aa90>,), kwargs={})
+2021-09-22 21:59:17.610 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 21:59:18.137 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x1049c15e0>,), kwargs={})
+2021-09-22 21:59:18.363 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 21:59:18.416 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x10499a1f0>,), kwargs={})
+2021-09-22 21:59:18.604 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 21:59:26.171 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1049c1160>,), kwargs={})
+2021-09-22 21:59:26.318 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:59:27.712 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x10499ac10>,), kwargs={})
+2021-09-22 21:59:27.840 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 21:59:30.325 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x1049c1f70>,), kwargs={})
+2021-09-22 21:59:30.544 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 21:59:31.760 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x1048bbfd0>,), kwargs={})
+2021-09-22 21:59:31.775 | DEBUG    | bot.services.add_post:set_username:217 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-22 21:59:32.159 | DEBUG    | bot.services.add_post:set_username:217 - Exiting 'get_preview_post' (result=None)
+2021-09-22 21:59:32.159 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 22:02:16.256 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 22:02:16.257 | INFO     | bot:<module>:4 - Import services
+2021-09-22 22:02:16.288 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 22:02:16.288 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 22:02:21.273 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x102487af0>,), kwargs={})
+2021-09-22 22:02:21.568 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 22:02:22.426 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x102487ac0>,), kwargs={})
+2021-09-22 22:02:22.559 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 22:02:23.512 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x10210b1c0>,), kwargs={})
+2021-09-22 22:02:23.664 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 22:02:24.850 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x10247d2e0>,), kwargs={})
+2021-09-22 22:02:25.051 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 22:02:33.766 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102633e20>,), kwargs={})
+2021-09-22 22:02:33.912 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 22:02:35.031 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102633fd0>,), kwargs={})
+2021-09-22 22:02:35.171 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 22:02:37.347 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x102476c40>,), kwargs={})
+2021-09-22 22:02:37.516 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 22:02:39.603 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x1024877f0>,), kwargs={})
+2021-09-22 22:02:39.619 | DEBUG    | bot.services.add_post:set_username:217 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-22 22:02:40.173 | DEBUG    | bot.services.add_post:set_username:217 - Exiting 'get_preview_post' (result=None)
+2021-09-22 22:02:40.174 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-22 22:03:20.338 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-22 22:03:20.338 | INFO     | bot:<module>:4 - Import services
+2021-09-22 22:03:20.370 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-22 22:03:20.370 | INFO     | bot.util:start_bot:20 - Bot Started
+2021-09-22 22:03:21.817 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x1025c1af0>,), kwargs={})
+2021-09-22 22:03:22.144 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-22 22:03:24.772 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1025c1ac0>,), kwargs={})
+2021-09-22 22:03:25.107 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-22 22:03:25.588 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x1025ce640>,), kwargs={})
+2021-09-22 22:03:25.755 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-22 22:03:26.578 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x102245130>,), kwargs={})
+2021-09-22 22:03:26.763 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-22 22:03:40.808 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1025cee20>,), kwargs={})
+2021-09-22 22:03:40.926 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 22:03:42.070 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1025c16d0>,), kwargs={})
+2021-09-22 22:03:42.169 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-22 22:03:44.617 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x1025b8250>,), kwargs={})
+2021-09-22 22:03:44.793 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-22 22:03:45.980 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x1025c16d0>,), kwargs={})
+2021-09-22 22:03:45.999 | DEBUG    | bot.services.add_post:set_username:217 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-22 22:03:46.276 | DEBUG    | bot.services.add_post:set_username:217 - Exiting 'get_preview_post' (result=None)
+2021-09-22 22:03:46.277 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)

@@ -55,6 +55,15 @@ class SessionWork:
 
         user.save()
 
+    @staticmethod
+    def add_photo(chat_id: int, file_id: str) -> int:
+        user: Users = Users.get(Users.id == chat_id)
+        session = user.session
+        photos = session['post']['photos']
+        photos.append(file_id)
+        user.save()
+        return len(photos)
+
 
 class UsersWork:
     """
@@ -79,6 +88,10 @@ class UsersWork:
         user: Users = Users.get_by_id(chat_id)
         user.status = Constants.StatusTitles.Admin
         user.save()
+
+    @staticmethod
+    def get_all_users() -> list[Users]:
+        return Users.select()
 
 
 class CategoryWork:
@@ -123,6 +136,36 @@ class CategoryWork:
         category: Categories = Categories.get_by_id(category_id)
         category.title = new_title
         category.save()
+
+
+class PostWork:
+    """
+        Класс для работы с постами
+    """
+
+    @staticmethod
+    def new_post(post_data: dict) -> int:
+        post = Post(title=post_data['title'],
+                    description=post_data['description'],
+                    price=post_data['price'],
+                    phone_number=post_data['phone_number'],
+                    username=post_data['username'],
+                    category_id=post_data['category_id'])
+
+        pictures = []
+
+        for file_id in post_data['photos']:
+            picture = Pictures(file_id=file_id)
+            picture.save()
+            pictures.append(picture.id)
+
+        post.save()
+        post.pictures.add(pictures)
+        return post.id
+
+    @staticmethod
+    def get_post(post_id: int) -> Post:
+        return Post.get_by_id(post_id)
 
 
 if __name__ == '__main__':

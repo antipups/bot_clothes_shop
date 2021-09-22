@@ -5,7 +5,7 @@ from bot.validators import Validator
 
 
 @bot.message_handler(func=lambda message: message.text == Button.CategoryMenu.Change and
-                                          message.from_user.id in Constants.Telegram.Admins)
+                                          db_util.UsersWork.is_admin(message.from_user.id))
 def choise_change_category(message: Message):
     chat_id, text, message_id = get_info_from_message(message=message)
     send_message(chat_id=chat_id,
