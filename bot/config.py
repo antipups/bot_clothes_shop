@@ -11,12 +11,25 @@ class Constants:
 
 class Commands:
     Start = ['start']
+    All = ['all']           # вывод всех постов
+    Categories = ['cats']   # вывод постов по категориям
+
+
+class CommandsDescription(Commands):
+    def __init__(self):
+        super(CommandsDescription, self).__init__()
+
+    def get_commands(self):
+        return ((super().Start[0], 'Стартовое меню'),
+                (super().All[0], 'Показать все объявления'),
+                (super().Categories[0], 'Показать объявления по категориям'))
 
 
 class Button:
     class Direction:
         Back = '🔙 Назад'
         NextPage = '▶️ Следующая страница'
+        PrevPage = '◀️ Предыдущая страница'
         Continue = '➡️ Продолжить'
         MainMenu = '🗃 Главное меню'
 
@@ -24,10 +37,11 @@ class Button:
         NewPost = '🆕 Новое объявление'
         Categories = '🗂 Работа с категориями'
         NewAdmin = '🤴 Новый администратор'
+        Posts = '📮 Посмотреть объявления'
 
     class StartMenuUsual:
-        CheckPosts = 'Все объявления'
-        CertainPosts = 'Определённая категория'
+        CheckPosts = '📚 Все объявления'
+        CertainPosts = '📗 Определённая категория'
 
     class CategoryMenu:
         Add = '➕ Добавить категорию'
@@ -48,7 +62,8 @@ class Button:
 
 
 class Keyboard:
-    StartMenuAdmin = [[Button.StartMenuAdmin.NewPost, Button.StartMenuAdmin.Categories, Button.StartMenuAdmin.NewAdmin]]
+    StartMenuAdmin = [[Button.StartMenuAdmin.NewPost, Button.StartMenuAdmin.Categories, Button.StartMenuAdmin.NewAdmin],
+                      [Button.StartMenuAdmin.Posts]]
     StartMenuUsual = [[Button.StartMenuUsual.CheckPosts, Button.StartMenuUsual.CertainPosts]]
 
     CategoryMenu = [[Button.CategoryMenu.Remove, Button.CategoryMenu.Change, Button.CategoryMenu.Add]]
@@ -64,20 +79,28 @@ class Callbacks:
 
         CreatePost = 'mkpost_{}'
 
+        OutputPosts = 'printposts_{}'
+
 
 class Messages:
     StartMenu = '👋 Добро пожаловать!\n' \
                 '☝️ Выберите что хотите посмотреть'
 
-    OutputPost = '✏️ Название: <b>{}</b>\n' \
-                 '📝 Описание: <b>{}</b>\n' \
-                 '💰 Цена: <b>{}</b>\n' \
-                 '🗂 Категория: <b>{}</b>\n\n' \
-                 '📱 Номер телефона: <code>{}</code>\n(клик по номеру для копирования)\n' \
-                 '👤 Имя пользователя: @{}'
+    class Posts:
+        OutputPost = '✏️ Название: <b>{}</b>\n' \
+                     '📝 Описание: <b>{}</b>\n' \
+                     '💰 Цена: <b>{}</b>\n' \
+                     '🗂 Категория: <b>{}</b>\n\n' \
+                     '📱 Номер телефона: <code>{}</code>\n(клик по номеру для копирования)\n' \
+                     '👤 Имя пользователя: @{}'
+        # PostPublicated = '❕❕❕ Доступен новый товар ❕❕❕\n\n{}'
+        PostPublicated = '👕👖🥾 <b>Доступен новый товар</b> 💄👗👠\n\n'
 
-    # PostPublicated = '❕❕❕ Доступен новый товар ❕❕❕\n\n{}'
-    PostPublicated = '👕👖🥾 <b>Доступен новый товар</b> 💄👗👠\n\n'
+        ChoisePosts = '☝️ Выберите какие <b>объявления</b> вы хотите посмотреть'
+
+        ChoisePostsCategory = '☝️ Выберите интересующую <b>вас</b> категорию'
+        AllCategoryPosts = '📥 Все объявления в категории <b>"{}"</b> выведены выше'
+        CategoryNotPosts = '😖 В данной категории на данный момент <b>нет объявлений</b>'
 
     class Admin:
         class Categories:

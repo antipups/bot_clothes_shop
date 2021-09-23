@@ -221,6 +221,7 @@ def set_username(message: Message):
                      text=Messages.Admin.CreatePost.ErrorEnterUsername
                      .format(db_util.Constants.LengthPostUsername))
 
+
 @logging()
 def get_preview_post(chat_id: int):
     preview_post(chat_id=chat_id)
@@ -230,6 +231,7 @@ def get_preview_post(chat_id: int):
                      method=publicate)
 
 
+@logging()
 def publicate(message: Message):
     chat_id, text, message_id = get_info_from_message(message=message)
 

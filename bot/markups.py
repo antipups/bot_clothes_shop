@@ -94,3 +94,15 @@ def username():
 def create_post():
     return _reply_markup(keyboard=Keyboard.CreatePost,
                          main_menu_=True)
+
+
+def post_menu(next_: bool = False, prev_: bool = False):
+    navigate_buttons = []
+    if prev_:
+        navigate_buttons.append(KeyboardButton(text=Button.Direction.PrevPage))
+    if next_:
+        navigate_buttons.append(KeyboardButton(text=Button.Direction.NextPage))
+    keyboard = deepcopy(Keyboard.StartMenuUsual)
+    keyboard.insert(0, navigate_buttons)
+    return _reply_markup(keyboard=keyboard,
+                         main_menu_=True)

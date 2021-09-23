@@ -167,6 +167,15 @@ class PostWork:
     def get_post(post_id: int) -> Post:
         return Post.get_by_id(post_id)
 
+    @staticmethod
+    def get_posts(category_id: Union[str, int] = None, offset: int = 0) -> list[Post]:
+        first_query = (Post.category_id == category_id) if category_id else 1
+        return Post\
+            .select()\
+            .where(first_query)\
+            .order_by(Post.id.desc())\
+            .limit(Constants.OutputAmountPostsLimit)
+
 
 if __name__ == '__main__':
     ...

@@ -23,3 +23,5 @@ class Constants:
     LengthPostPhone = 20
     LengthPostUsername = 32
 
+    OutputAmountPostsLimit = 10
+

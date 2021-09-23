@@ -10,8 +10,9 @@ bot = TeleBot(token=Constants.Telegram.Token,
               parse_mode='html')
 
 
-# bot.set_my_commands([BotCommand(command, description) for command, description in COMMAND_DESCRIPTIONS.items()],
-#                     language_code='ru')
+bot.set_my_commands([BotCommand(command, description) for command, description in CommandsDescription().get_commands()],
+                    # language_code='ru'
+                    )
 # bot.set_my_commands([BotCommand(command, description) for command, description in COMMAND_DESCRIPTIONS_ON_UZB.items()],
 #                     language_code='uz')
 
