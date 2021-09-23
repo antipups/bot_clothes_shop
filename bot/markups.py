@@ -102,7 +102,12 @@ def post_menu(next_: bool = False, prev_: bool = False):
         navigate_buttons.append(KeyboardButton(text=Button.Direction.PrevPage))
     if next_:
         navigate_buttons.append(KeyboardButton(text=Button.Direction.NextPage))
+
     keyboard = deepcopy(Keyboard.StartMenuUsual)
-    keyboard.insert(0, navigate_buttons)
+
+    if navigate_buttons:
+        keyboard.insert(0, navigate_buttons)
+        # keyboard.pop(1)
+
     return _reply_markup(keyboard=keyboard,
                          main_menu_=True)

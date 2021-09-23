@@ -22,8 +22,13 @@ def preview_post(chat_id: int):
                                                post_data['username'])
     photos = tuple(InputMediaPhoto(media=photo) for photo in post_data['photos'])
     photos[0].caption, photos[0].parse_mode = caption, 'html'
-    bot.send_media_group(chat_id=chat_id,
-                         media=photos)
+    try:
+        bot.send_media_group(chat_id=chat_id,
+                             media=photos)
+    except Exception as e:
+        logger.exception('Error in output PREVIEW')
+        send_message(chat_id=chat_id,
+                     text=caption)
 
 
 @logging()
@@ -44,8 +49,13 @@ def send_post(chat_id: int, post_id: int, new: bool = False):
     photos = tuple(InputMediaPhoto(media=photo.file_id) for photo in post.pictures)
     photos[0].caption, photos[0].parse_mode = caption, 'html'
 
-    bot.send_media_group(chat_id=chat_id,
-                         media=photos)
+    try:
+        bot.send_media_group(chat_id=chat_id,
+                             media=photos)
+    except Exception as e:
+        logger.exception('Error in output POSTS')
+        send_message(chat_id=chat_id,
+                     text=caption)
 
 
 @bot.message_handler(func=lambda message: message.text == Button.StartMenuAdmin.Posts)
@@ -58,7 +68,10 @@ def post_menu(message: Message):
 
 
 def output_posts(chat_id: int, category_id: Union[str, int] = None):
-    for post in db_util.PostWork.get_posts(category_id=category_id):
+    offset = db_util.SessionWork.get(chat_id=chat_id,
+                                     key='offset')
+    posts_offset = offset * db_util.Constants.OutputAmountPostsLimit
+    for post in db_util.PostWork.get_posts(category_id=category_id)[posts_offset:posts_offset + db_util.Constants.OutputAmountPostsLimit:][::-1]:
         send_post(chat_id=chat_id,
                   post_id=post.id)
         time.sleep(.3)
@@ -69,16 +82,20 @@ def output_posts(chat_id: int, category_id: Union[str, int] = None):
 @logging()
 def all_posts(message: Message):
     chat_id, text, message_id = get_info_from_message(message=message)
-    output_posts(chat_id=chat_id)
-    send_message(chat_id=chat_id,
-                 text=Messages.Posts.ChoisePosts,
-                 reply_markup=markups.post_menu())
+    db_util.SessionWork.set(chat_id=chat_id,
+                            key='parent_id',
+                            value=None)
+    db_util.SessionWork.set(chat_id=chat_id,
+                            key='offset',
+                            value=0)
+    output_posts_by_category(chat_id=chat_id)
 
 
 @bot.message_handler(func=lambda message: message.text == Button.StartMenuUsual.CertainPosts)
 @bot.message_handler(commands=Commands.Categories)
 @logging()
 def categories_posts(message: Message):
+    print('sex')
     chat_id, text, message_id = get_info_from_message(message=message)
     db_util.SessionWork.set(chat_id=chat_id,
                             key='parent_id',
@@ -96,30 +113,70 @@ def set_change_category(message: Message):
                              callback=Callbacks.Category.OutputPosts)
     if status == -1:
         post_menu(message=message)
+
     elif status == 1:
         output_posts_by_category(chat_id=chat_id)
+        db_util.SessionWork.set(chat_id=chat_id,
+                                key='offset',
+                                value=0)
 
 
-def output_posts_by_category(chat_id: int):
+def output_posts_by_category(message: Message = None, chat_id: int = 0):
+    if message:
+        chat_id, text, message_id = get_info_from_message(message=message)
+
+    if message and text == Button.Direction.MainMenu:
+        start(message=message)
+        return
+
+    elif message and text == Button.StartMenuUsual.CheckPosts:
+        all_posts(message=message)
+        return
+
+    elif message and text == Button.StartMenuUsual.CertainPosts:
+        categories_posts(message=message)
+        return
+
+    if message and text == Button.Direction.NextPage:
+        db_util.SessionWork.set(chat_id=chat_id,
+                                key='offset',
+                                value=db_util.SessionWork.get(chat_id=chat_id,
+                                                              key='offset') + 1)
+    if message and text == Button.Direction.PrevPage:
+        db_util.SessionWork.set(chat_id=chat_id,
+                                key='offset',
+                                value=db_util.SessionWork.get(chat_id=chat_id,
+                                                              key='offset') - 1)
+
     category_id = db_util.SessionWork.get(chat_id=chat_id,
                                           key='parent_id')
     if posts := db_util.PostWork.get_posts(category_id=category_id):
+        if category_id:
+            breadcrumbs = list(category.title for category in db_util.CategoryWork().get_all_parents(category_id=category_id)[::-1])
+            breadcrumbs[-1] = f'<u>{breadcrumbs[-1]}</u>'
+            text = Messages.Posts.CategoryPosts\
+                .format(' -> '.join(breadcrumbs))
+        else:
+            text = Messages.Posts.AllPosts
+
+        prev_, next_ = False, False
+        amount_posts = len(posts)
+
+        if amount_posts > db_util.Constants.OutputAmountPostsLimit:
+            offset = db_util.SessionWork.get(chat_id=chat_id,
+                                             key='offset')
+            if offset > 0:
+                prev_ = True
+            if amount_posts > offset * db_util.Constants.OutputAmountPostsLimit + db_util.Constants.OutputAmountPostsLimit:
+                next_ = True
+
         output_posts(chat_id=chat_id,
                      category_id=category_id)
-        breadcrumbs = list(category.title for category in db_util.CategoryWork().get_all_parents(category_id=category_id)[::-1])
-        breadcrumbs[-1] = f'<u>{breadcrumbs[-1]}</u>'
-        text = Messages.Posts.AllCategoryPosts\
-            .format(' -> '.join(breadcrumbs))
-
-        offset = db_util.SessionWork.get(chat_id=chat_id,
-                                         key='offset_posts')
-
-        if len(posts):
-            ...
-
-        send_message(chat_id=chat_id,
-                     text=text,
-                     reply_markup=markups.post_menu())
+        schedule_message(chat_id=chat_id,
+                         text=text,
+                         reply_markup=markups.post_menu(next_=next_,
+                                                        prev_=prev_),
+                         method=output_posts_by_category)
 
     else:
         text = Messages.Posts.CategoryNotPosts
