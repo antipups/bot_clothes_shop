@@ -18,8 +18,8 @@ class Constants:
     LengthCategoryTitle = 32
 
     LengthPostTitle = 32
-    LengthPostDescription = 256
-    LengthPostPrice = 10
+    LengthPostDescription = 500
+    LengthPostPrice = 15
     LengthPostPhone = 20
     LengthPostUsername = 32
 

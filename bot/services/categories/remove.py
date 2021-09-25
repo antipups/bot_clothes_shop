@@ -1,7 +1,6 @@
 from bot.services.categories.categories_search import choise_category
 from bot.services.categories.menu import categories_menu
 from bot.util import *
-from bot.validators import Validator
 
 
 @bot.message_handler(func=lambda message: message.text == Button.CategoryMenu.Remove and
@@ -32,11 +31,3 @@ def remove_category(message: Message):
                      text=Messages.Admin.Categories.SuccessRemoveCategory,
                      reply_markup=markups.category_menu())
 
-
-# @bot.message_handler(func=lambda message: message.text == Button.CategoryMenu.Change and
-#                      message.from_user.id in Constants.Telegram.Admins)
-# def categories_menu(message: Message):
-#     chat_id, text, message_id = get_info_from_message(message=message)
-#     send_message(chat_id=chat_id,
-#                  text=Messages.Admin.Categories.EnterTitleChangeCategory,
-#                  reply_markup=markups.categories(callback=Callbacks.Category.Change),)

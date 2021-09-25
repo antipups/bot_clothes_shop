@@ -122,6 +122,8 @@ class CategoryWork:
 
     @staticmethod
     def new_category(parent_id: Union[int, str], title: str):
+        if parent_id == 'None':
+            parent_id = None
         Categories(parent_id=parent_id,
                    title=title).save()
 
@@ -175,6 +177,22 @@ class PostWork:
             .where(first_query)
             # .order_by(Post.id.desc())
             # .limit(Constants.OutputAmountPostsLimit)
+
+    @staticmethod
+    def remove_post(post_id: str):
+        Post.get_by_id(post_id).delete_instance()
+
+    @staticmethod
+    def set_new_description(post_id: str, description: str):
+        post: Post = Post.get_by_id(post_id)
+        post.description = description
+        post.save()
+
+    @staticmethod
+    def set_new_price(post_id: str, price: str):
+        post: Post = Post.get_by_id(post_id)
+        post.price = price
+        post.save()
 
 
 if __name__ == '__main__':

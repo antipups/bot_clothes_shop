@@ -1,5 +1,4 @@
 import time
-
 from bot.services.categories.categories_search import choise_category
 from bot.services.check_posts import preview_post, send_post
 from bot.services.start import start
@@ -90,7 +89,7 @@ def set_price(message: Message):
 
     else:
         get_post_price(chat_id=chat_id,
-                       text=Messages.Admin.CreatePost.ErrorDescriptionLength)
+                       text=Messages.Admin.CreatePost.ErrorPriceLength)
 
 
 def get_category(chat_id: int):

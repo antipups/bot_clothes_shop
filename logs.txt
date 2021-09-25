@@ -1083,3 +1083,1225 @@ ValueError: too many values to unpack (expected 2)
 2021-09-23 10:45:06.552 | DEBUG    | bot.services.check_posts:output_posts:62 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
 2021-09-23 10:45:06.783 | DEBUG    | bot.services.check_posts:output_posts:62 - Exiting 'send_post' (result=None)
 2021-09-23 10:45:07.325 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 16:26:24.588 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:26:24.588 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:26:24.643 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:26:24.643 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:26:29.827 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:26:29.827 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:26:29.859 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:26:29.859 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:26:39.930 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x102b75b50>,), kwargs={})
+2021-09-23 16:26:40.309 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-23 16:26:41.797 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x102b92fa0>,), kwargs={})
+2021-09-23 16:26:41.943 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-23 16:26:45.438 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x102b75730>,), kwargs={})
+2021-09-23 16:26:45.570 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-23 16:26:48.130 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x102b92b80>,), kwargs={})
+2021-09-23 16:26:48.418 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-23 16:27:04.395 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102b925e0>,), kwargs={})
+2021-09-23 16:27:04.530 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-23 16:28:59.131 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:28:59.132 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:28:59.164 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:28:59.164 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:29:09.248 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x102402100>,), kwargs={})
+2021-09-23 16:29:09.351 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-23 16:29:17.199 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x1023ee370>,), kwargs={})
+2021-09-23 16:29:17.415 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-23 16:29:17.828 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x102402f40>,), kwargs={})
+2021-09-23 16:29:18.063 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-23 16:29:18.526 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x1023ee340>,), kwargs={})
+2021-09-23 16:29:18.852 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-23 16:29:28.590 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102402d90>,), kwargs={})
+2021-09-23 16:29:28.728 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-23 16:29:30.960 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102402280>,), kwargs={})
+2021-09-23 16:29:31.103 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-23 16:29:33.299 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x102402e50>,), kwargs={})
+2021-09-23 16:29:33.426 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-23 16:29:34.311 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x1024023a0>,), kwargs={})
+2021-09-23 16:29:34.326 | DEBUG    | bot.services.add_post:set_username:217 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-23 16:29:34.326 | DEBUG    | bot.services.add_post:get_preview_post:227 - Entering 'preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-23 16:29:34.547 | DEBUG    | bot.services.add_post:get_preview_post:227 - Exiting 'preview_post' (result=None)
+2021-09-23 16:29:34.739 | DEBUG    | bot.services.add_post:set_username:217 - Exiting 'get_preview_post' (result=None)
+2021-09-23 16:29:34.740 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-23 16:29:37.943 | DEBUG    | telebot.util:run:82 - Entering 'publicate' (args=(<telebot.types.Message object at 0x102341e20>,), kwargs={})
+2021-09-23 16:29:37.944 | DEBUG    | bot.services.add_post:publicate:239 - Entering 'start_create_post' (args=(), kwargs={'message': <telebot.types.Message object at 0x102341e20>})
+2021-09-23 16:29:38.067 | DEBUG    | bot.services.add_post:publicate:239 - Exiting 'start_create_post' (result=None)
+2021-09-23 16:29:38.067 | DEBUG    | telebot.util:run:82 - Exiting 'publicate' (result=None)
+2021-09-23 16:29:39.511 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x102402e50>,), kwargs={})
+2021-09-23 16:29:39.673 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-23 16:29:40.387 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x1023ee3a0>,), kwargs={})
+2021-09-23 16:29:40.531 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-23 16:29:41.499 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x102402f40>,), kwargs={})
+2021-09-23 16:29:41.629 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-23 16:29:51.555 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x1024022b0>,), kwargs={})
+2021-09-23 16:29:51.707 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-23 16:29:52.855 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x102402f40>,), kwargs={})
+2021-09-23 16:29:53.083 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-23 16:29:55.771 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x102402d90>,), kwargs={})
+2021-09-23 16:29:55.908 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-23 16:30:01.176 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x1023ee3d0>,), kwargs={})
+2021-09-23 16:30:01.192 | DEBUG    | bot.services.add_post:set_username:217 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-23 16:30:01.193 | DEBUG    | bot.services.add_post:get_preview_post:227 - Entering 'preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-23 16:30:01.389 | DEBUG    | bot.services.add_post:get_preview_post:227 - Exiting 'preview_post' (result=None)
+2021-09-23 16:30:01.530 | DEBUG    | bot.services.add_post:set_username:217 - Exiting 'get_preview_post' (result=None)
+2021-09-23 16:30:01.530 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-23 16:30:04.544 | DEBUG    | telebot.util:run:82 - Entering 'publicate' (args=(<telebot.types.Message object at 0x1024022b0>,), kwargs={})
+2021-09-23 16:30:04.739 | DEBUG    | bot.services.add_post:publicate:248 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5, 'new': True})
+2021-09-23 16:30:04.929 | DEBUG    | bot.services.add_post:publicate:248 - Exiting 'send_post' (result=None)
+2021-09-23 16:30:05.234 | DEBUG    | bot.services.add_post:publicate:248 - Entering 'send_post' (args=(), kwargs={'chat_id': 987671950, 'post_id': 5, 'new': True})
+2021-09-23 16:30:05.423 | ERROR    | bot.services.check_posts:send_post:56 - Error in output POSTS
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x1016bb790>
+    └ <WorkerThread(WorkerThread2, started daemon 6196064256)>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x101e478b0>
+    └ <WorkerThread(WorkerThread2, started daemon 6196064256)>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x1024022b0>,)
+    └ <function publicate at 0x1023e5dc0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (<telebot.types.Message object at 0x1024022b0>,)
+             └ <function publicate at 0x1023e5d30>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/add_post.py", line 248, in publicate
+    send_post(chat_id=user.id,
+    │                 │    └ <peewee.FieldAccessor object at 0x101db46d0>
+    │                 └ <Users: 987671950>
+    └ <function send_post at 0x1023da700>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {'chat_id': 987671950, 'post_id': 5, 'new': True}
+             │     └ ()
+             └ <function send_post at 0x1023da670>
+
+> File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 53, in send_post
+    bot.send_media_group(chat_id=chat_id,
+    │   │                        └ 987671950
+    │   └ <function TeleBot.send_media_group at 0x102328430>
+    └ <telebot.TeleBot object at 0x101de5b20>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/__init__.py", line 1311, in send_media_group
+    result = apihelper.send_media_group(
+             │         └ <function send_media_group at 0x1023149d0>
+             └ <module 'telebot.apihelper' from '/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/tel...
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 484, in send_media_group
+    return _make_request(
+           └ <function _make_request at 0x101ee2820>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 145, in _make_request
+    json_result = _check_result(method_name, result)
+                  │             │            └ <Response [403]>
+                  │             └ 'sendMediaGroup'
+                  └ <function _check_result at 0x101ee28b0>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 172, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+          │                    │            │       └ {'ok': False, 'error_code': 403, 'description': "Forbidden: bot can't initiate conversation with a user"}
+          │                    │            └ <Response [403]>
+          │                    └ 'sendMediaGroup'
+          └ <class 'telebot.apihelper.ApiTelegramException'>
+
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bot can't initiate conversation with a user
+2021-09-23 16:30:05.708 | ERROR    | bot.util:send_message:33 - Error in send_message cause - A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bot can't initiate conversation with a user, chat_id - 987671950
+2021-09-23 16:30:05.709 | DEBUG    | bot.services.add_post:publicate:248 - Exiting 'send_post' (result=None)
+2021-09-23 16:30:06.015 | DEBUG    | telebot.util:run:82 - Exiting 'publicate' (result=None)
+2021-09-23 16:30:13.942 | DEBUG    | telebot.util:run:82 - Entering 'post_menu' (args=(<telebot.types.Message object at 0x102402370>,), kwargs={})
+2021-09-23 16:30:14.098 | DEBUG    | telebot.util:run:82 - Exiting 'post_menu' (result=None)
+2021-09-23 16:32:25.962 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:32:25.963 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:32:26.001 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:32:26.001 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:32:27.274 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x1069eff10>,), kwargs={})
+2021-09-23 16:32:27.307 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 16:32:27.693 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:32:27.998 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 16:32:28.282 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:32:28.702 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 16:32:38.162 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x1069efee0>,), kwargs={})
+2021-09-23 16:32:38.182 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 16:32:38.497 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:32:38.803 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 16:32:38.993 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:32:39.413 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 16:33:13.518 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:33:13.518 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:33:13.553 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:33:13.553 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:33:20.600 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10363e670>,), kwargs={})
+2021-09-23 16:33:30.398 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 16:33:30.819 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:33:37.357 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 16:33:37.568 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:33:40.982 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 16:34:11.097 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:34:11.098 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:34:11.136 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:34:11.136 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:34:11.604 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10627a6d0>,), kwargs={})
+2021-09-23 16:35:32.351 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:35:32.351 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:35:32.383 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:35:32.383 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:35:36.757 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x106031250>,), kwargs={})
+2021-09-23 16:35:36.785 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 16:35:37.328 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:35:37.630 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 16:35:37.850 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:35:38.155 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 16:35:38.353 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:35:38.659 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 16:35:38.853 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:35:39.278 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 16:36:14.244 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:36:14.244 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:36:14.276 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:36:14.276 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:36:15.728 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x101c4fee0>,), kwargs={})
+2021-09-23 16:36:15.756 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 16:36:16.142 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:36:16.445 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 16:36:16.671 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:36:16.978 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 16:36:17.192 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:36:17.496 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 16:36:17.685 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:36:18.123 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 16:36:44.204 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:36:44.205 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:36:44.249 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:36:44.249 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:36:46.828 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x102fae700>,), kwargs={})
+2021-09-23 16:36:50.857 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 16:36:51.180 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:36:51.485 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 16:36:51.662 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:36:51.968 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 16:36:52.298 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:36:52.600 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 16:36:52.744 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:37:12.661 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:37:12.662 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:37:12.699 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:37:12.700 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:37:16.206 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x102e01730>,), kwargs={})
+2021-09-23 16:37:16.229 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 16:37:16.697 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:37:17.003 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 16:37:17.179 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:37:17.484 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 16:37:17.712 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:37:18.013 | DEBUG    | bot.services.check_posts:output_posts:72 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 16:37:18.195 | DEBUG    | bot.services.check_posts:output_posts:72 - Exiting 'send_post' (result=None)
+2021-09-23 16:37:21.932 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 16:49:47.665 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:49:47.665 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:49:47.694 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:49:47.694 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:49:49.101 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x102279850>,), kwargs={})
+2021-09-23 16:51:48.458 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:51:48.459 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:51:48.488 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:51:48.488 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:51:51.893 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x101b16b20>,), kwargs={})
+2021-09-23 16:52:40.141 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:52:40.141 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:52:40.175 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:52:40.175 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:52:41.404 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10323fb80>,), kwargs={})
+2021-09-23 16:57:25.636 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:57:25.637 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:57:25.671 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:57:25.671 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:57:27.055 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x102491b80>,), kwargs={})
+2021-09-23 16:57:37.371 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:57:37.371 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:57:37.409 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:57:37.409 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:57:38.617 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x1021e0b80>,), kwargs={})
+2021-09-23 16:57:38.975 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 16:57:57.204 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 16:57:57.204 | INFO     | bot:<module>:4 - Import services
+2021-09-23 16:57:57.237 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 16:57:57.238 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 16:57:58.510 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x1060ffb20>,), kwargs={})
+2021-09-23 16:57:58.587 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 16:57:59.107 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 16:57:59.410 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 16:57:59.626 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 16:58:00.155 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 16:58:02.690 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 16:58:02.931 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 16:58:03.235 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 16:58:03.431 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:01:22.791 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 17:01:22.791 | INFO     | bot:<module>:4 - Import services
+2021-09-23 17:01:22.830 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 17:01:22.835 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 17:01:28.033 | DEBUG    | telebot.util:run:82 - Entering 'post_menu' (args=(<telebot.types.Message object at 0x104391070>,), kwargs={})
+2021-09-23 17:01:28.217 | DEBUG    | telebot.util:run:82 - Exiting 'post_menu' (result=None)
+2021-09-23 17:01:29.116 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10436f220>,), kwargs={})
+2021-09-23 17:01:29.180 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:01:29.493 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:01:29.795 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:01:30.045 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:01:30.498 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 17:01:34.988 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:01:35.502 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:01:35.808 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:01:36.039 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:02:00.295 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 17:02:00.296 | INFO     | bot:<module>:4 - Import services
+2021-09-23 17:02:00.331 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 17:02:00.331 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 17:02:02.791 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x104a27520>,), kwargs={})
+2021-09-23 17:02:02.878 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:02:03.272 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:02:03.575 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:02:03.807 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:02:04.246 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 17:02:05.325 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:02:05.540 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:02:05.846 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:02:06.103 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:02:21.274 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x104a700d0>,), kwargs={})
+2021-09-23 17:02:24.526 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:02:24.779 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:02:25.084 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:02:25.258 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:02:25.696 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 17:04:07.639 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 17:04:07.639 | INFO     | bot:<module>:4 - Import services
+2021-09-23 17:04:07.672 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 17:04:07.672 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 17:04:11.914 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x104b5fb80>,), kwargs={})
+2021-09-23 17:04:11.974 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:04:12.410 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:12.712 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:04:12.966 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:13.505 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 17:04:15.400 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:04:15.893 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:16.199 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:04:16.429 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:20.028 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:04:20.232 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:20.538 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:04:20.790 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:24.596 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:04:24.765 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:25.071 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:04:25.295 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:28.064 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:04:28.282 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:28.588 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:04:28.801 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:45.817 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 17:04:45.817 | INFO     | bot:<module>:4 - Import services
+2021-09-23 17:04:45.848 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 17:04:45.849 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 17:04:48.057 | DEBUG    | telebot.util:run:82 - Entering 'post_menu' (args=(<telebot.types.Message object at 0x103fa95b0>,), kwargs={})
+2021-09-23 17:04:48.444 | DEBUG    | telebot.util:run:82 - Exiting 'post_menu' (result=None)
+2021-09-23 17:04:49.627 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x103fa9e50>,), kwargs={})
+2021-09-23 17:04:49.686 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:04:49.932 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:50.235 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:04:50.432 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:50.738 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:04:50.931 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:51.232 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:04:51.406 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:04:51.840 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 17:06:24.177 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:06:24.526 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:24.831 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:06:25.050 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:25.356 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:06:25.573 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:25.878 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:06:26.095 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:28.000 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:06:28.202 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:28.505 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:06:28.720 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:29.024 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:06:29.233 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:29.538 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:06:29.768 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:49.092 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 17:06:49.093 | INFO     | bot:<module>:4 - Import services
+2021-09-23 17:06:49.132 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 17:06:49.132 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 17:06:50.358 | DEBUG    | telebot.util:run:82 - Entering 'categories_posts' (args=(<telebot.types.Message object at 0x103d7c580>,), kwargs={})
+2021-09-23 17:06:50.767 | DEBUG    | telebot.util:run:82 - Exiting 'categories_posts' (result=None)
+2021-09-23 17:06:54.586 | DEBUG    | bot.services.check_posts:set_change_category:114 - Entering 'post_menu' (args=(), kwargs={'message': <telebot.types.CallbackQuery object at 0x103d7cfa0>})
+2021-09-23 17:06:54.945 | DEBUG    | bot.services.check_posts:set_change_category:114 - Exiting 'post_menu' (result=None)
+2021-09-23 17:06:56.328 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x103d7ce20>,), kwargs={})
+2021-09-23 17:06:56.385 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:06:56.572 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:56.874 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:06:57.133 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:57.438 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:06:57.626 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:57.928 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:06:58.187 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:06:58.637 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 17:06:59.536 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:06:59.739 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:00.041 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:07:02.404 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:02.706 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:07:03.013 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:03.318 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:07:03.523 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:46.694 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 17:07:46.694 | INFO     | bot:<module>:4 - Import services
+2021-09-23 17:07:46.724 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 17:07:46.724 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 17:07:47.872 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x1067a3b80>,), kwargs={})
+2021-09-23 17:07:47.926 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:07:48.509 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:48.814 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:07:48.949 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:49.254 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:07:49.466 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:49.769 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:07:49.972 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:50.408 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 17:07:53.026 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:07:53.209 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:53.515 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:07:53.763 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:54.069 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:07:54.259 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:07:54.561 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:07:54.854 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:09:15.221 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 17:09:15.222 | INFO     | bot:<module>:4 - Import services
+2021-09-23 17:09:15.258 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 17:09:15.258 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 17:09:16.498 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x105bcd610>,), kwargs={})
+2021-09-23 17:09:16.554 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:09:16.921 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:09:17.225 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:09:17.399 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:09:17.701 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:09:17.892 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:09:18.198 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:09:18.369 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:09:18.809 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 17:13:52.756 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-23 17:13:52.756 | INFO     | bot:<module>:4 - Import services
+2021-09-23 17:13:52.797 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-23 17:13:52.797 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-23 17:13:54.802 | DEBUG    | telebot.util:run:82 - Entering 'categories_posts' (args=(<telebot.types.Message object at 0x101fb6cd0>,), kwargs={})
+2021-09-23 17:13:55.183 | DEBUG    | telebot.util:run:82 - Exiting 'categories_posts' (result=None)
+2021-09-23 17:14:00.065 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:14:00.279 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:00.585 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:14:00.901 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:01.203 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:14:01.461 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:06.781 | DEBUG    | bot.services.check_posts:output_posts_by_category:133 - Entering 'all_posts' (args=(), kwargs={'message': <telebot.types.Message object at 0x101fa2100>})
+2021-09-23 17:14:06.834 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:14:07.091 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:07.394 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:14:07.560 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:07.865 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:14:08.138 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:08.442 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:14:08.609 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:09.353 | DEBUG    | bot.services.check_posts:output_posts_by_category:133 - Exiting 'all_posts' (result=None)
+2021-09-23 17:14:32.436 | DEBUG    | bot.services.check_posts:output_posts_by_category:137 - Entering 'categories_posts' (args=(), kwargs={'message': <telebot.types.Message object at 0x101fb6ca0>})
+2021-09-23 17:14:32.559 | DEBUG    | bot.services.check_posts:output_posts_by_category:137 - Exiting 'categories_posts' (result=None)
+2021-09-23 17:14:34.536 | DEBUG    | bot.services.check_posts:set_change_category:115 - Entering 'post_menu' (args=(), kwargs={'message': <telebot.types.CallbackQuery object at 0x101fe0160>})
+2021-09-23 17:14:34.672 | DEBUG    | bot.services.check_posts:set_change_category:115 - Exiting 'post_menu' (result=None)
+2021-09-23 17:14:36.333 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x101fe09a0>,), kwargs={})
+2021-09-23 17:14:36.388 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:14:36.546 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:36.852 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:14:37.031 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:37.333 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:14:37.552 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:37.856 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:14:38.035 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:38.574 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-23 17:14:42.521 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 5})
+2021-09-23 17:14:42.766 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:43.070 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 4})
+2021-09-23 17:14:43.286 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:43.588 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 3})
+2021-09-23 17:14:43.780 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 17:14:44.086 | DEBUG    | bot.services.check_posts:output_posts:75 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 2})
+2021-09-23 17:14:44.286 | DEBUG    | bot.services.check_posts:output_posts:75 - Exiting 'send_post' (result=None)
+2021-09-23 18:07:29.934 | DEBUG    | telebot.util:run:82 - Entering 'post_menu' (args=(<telebot.types.Message object at 0x101fb6eb0>,), kwargs={})
+2021-09-23 18:07:30.242 | DEBUG    | telebot.util:run:82 - Exiting 'post_menu' (result=None)
+2021-09-24 15:13:25.953 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-24 15:13:25.953 | INFO     | bot:<module>:4 - Import services
+2021-09-24 15:13:26.199 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 15:13:26.199 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 15:14:41.667 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-24 15:14:41.667 | INFO     | bot:<module>:4 - Import services
+2021-09-24 15:14:42.012 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 15:14:42.012 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 15:17:37.093 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-24 15:17:37.093 | INFO     | bot:<module>:4 - Import services
+2021-09-24 15:17:37.414 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 15:17:37.414 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 15:17:54.423 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x10918fb20>,), kwargs={})
+2021-09-24 15:17:54.819 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-24 15:17:56.011 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x109193d90>,), kwargs={})
+2021-09-24 15:17:56.251 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-24 15:46:23.886 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-24 15:46:23.890 | INFO     | bot:<module>:4 - Import services
+2021-09-24 15:46:24.280 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 15:46:24.280 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 15:57:48.430 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-24 15:57:48.430 | INFO     | bot:<module>:4 - Import services
+2021-09-24 15:57:48.620 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 15:57:48.620 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 15:58:08.809 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-24 15:58:08.810 | INFO     | bot:<module>:4 - Import services
+2021-09-24 15:58:09.239 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 15:58:09.239 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 15:59:26.226 | INFO     | bot.services:<module>:4 - Import services - categories, start, admins, add_post
+2021-09-24 15:59:26.226 | INFO     | bot:<module>:4 - Import services
+2021-09-24 15:59:26.427 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 15:59:26.427 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 21:00:46.356 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 21:00:46.356 | INFO     | bot:<module>:4 - Import services
+2021-09-24 21:00:46.681 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 21:00:46.681 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 21:00:57.486 | DEBUG    | telebot.util:run:82 - Entering 'post_menu' (args=(<telebot.types.Message object at 0x10502dc10>,), kwargs={})
+2021-09-24 21:00:57.785 | DEBUG    | telebot.util:run:82 - Exiting 'post_menu' (result=None)
+2021-09-24 21:01:00.114 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10502d790>,), kwargs={})
+2021-09-24 21:01:00.353 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 21:01:32.072 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 21:01:32.072 | INFO     | bot:<module>:4 - Import services
+2021-09-24 21:01:32.273 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 21:01:32.273 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 21:01:35.106 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x108928f40>,), kwargs={})
+2021-09-24 21:01:35.589 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-24 21:01:37.322 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x10892e430>,), kwargs={})
+2021-09-24 21:01:37.711 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-24 21:01:39.144 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x10892ed60>,), kwargs={})
+2021-09-24 21:01:39.283 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-24 21:01:40.758 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x10892ecd0>,), kwargs={})
+2021-09-24 21:01:41.006 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-24 21:01:43.704 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x108928f70>,), kwargs={})
+2021-09-24 21:01:43.827 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-24 21:01:44.450 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x10892e8b0>,), kwargs={})
+2021-09-24 21:01:44.621 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-24 21:01:45.179 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x10892ed90>,), kwargs={})
+2021-09-24 21:01:45.366 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-24 21:01:59.989 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x108928fd0>,), kwargs={})
+2021-09-24 21:02:00.144 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-24 21:02:02.395 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x108928fa0>,), kwargs={})
+2021-09-24 21:02:02.660 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-24 21:02:03.027 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x10892efa0>,), kwargs={})
+2021-09-24 21:02:03.174 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-24 21:02:04.749 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x10892ecd0>,), kwargs={})
+2021-09-24 21:02:04.896 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-24 21:02:12.450 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x10892e8b0>,), kwargs={})
+2021-09-24 21:02:12.605 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-24 21:02:14.204 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x108928d90>,), kwargs={})
+2021-09-24 21:02:14.369 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-24 21:02:16.663 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x10892e6a0>,), kwargs={})
+2021-09-24 21:02:16.865 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-24 21:02:17.693 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x108928f40>,), kwargs={})
+2021-09-24 21:02:17.714 | DEBUG    | bot.services.posts.add:set_username:216 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-24 21:02:17.714 | DEBUG    | bot.services.posts.add:get_preview_post:226 - Entering 'preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-24 21:02:17.985 | DEBUG    | bot.services.posts.add:get_preview_post:226 - Exiting 'preview_post' (result=None)
+2021-09-24 21:02:18.204 | DEBUG    | bot.services.posts.add:set_username:216 - Exiting 'get_preview_post' (result=None)
+2021-09-24 21:02:18.205 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-24 21:02:19.783 | DEBUG    | telebot.util:run:82 - Entering 'publicate' (args=(<telebot.types.Message object at 0x10892ed60>,), kwargs={})
+2021-09-24 21:02:19.961 | DEBUG    | bot.services.posts.add:publicate:247 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6, 'new': True})
+2021-09-24 21:02:19.990 | ERROR    | bot.services.check_posts:send_post:61 - Error in output POSTS
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x10300f1f0>
+    └ <WorkerThread(WorkerThread2, started daemon 6163886080)>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x103cfb9d0>
+    └ <WorkerThread(WorkerThread2, started daemon 6163886080)>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x10892ed60>,)
+    └ <function publicate at 0x10429d310>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (<telebot.types.Message object at 0x10892ed60>,)
+             └ <function publicate at 0x10429d280>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/posts/add.py", line 247, in publicate
+    send_post(chat_id=user.id,
+    │                 │    └ <peewee.FieldAccessor object at 0x103904280>
+    │                 └ <Users: 704369002>
+    └ <function send_post at 0x10428f670>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {'chat_id': 704369002, 'post_id': 6, 'new': True}
+             │     └ ()
+             └ <function send_post at 0x10428f5e0>
+
+> File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 54, in send_post
+    bot.send_photo(chat_id=chat_id,
+    │   │                  └ 704369002
+    │   └ <function TeleBot.send_photo at 0x1041d8f70>
+    └ <telebot.TeleBot object at 0x103c96e50>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/__init__.py", line 1038, in send_photo
+    apihelper.send_photo(
+    │         └ <function send_photo at 0x1041c4940>
+    └ <module 'telebot.apihelper' from '/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/tel...
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 466, in send_photo
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+           │             │      │                  │              └ {'photo': <telebot.types.InputMediaPhoto object at 0x108953310>}
+           │             │      │                  └ {'chat_id': 704369002, 'reply_markup': <function post_change_menu at 0x1041ee9d0>, 'parse_mode': 'html'}
+           │             │      └ 'sendPhoto'
+           │             └ '889368628:AAGO10iS0nVkRlbvQre_OpgjDG2qlEbsK4s'
+           └ <function _make_request at 0x103d8b820>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 139, in _make_request
+    result = _get_req_session().request(
+             └ <function _get_req_session at 0x103d8b790>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+           │    │               └ <Request [POST]>
+           │    └ <function Session.prepare_request at 0x1041cbf70>
+           └ <requests.sessions.Session object at 0x10892e910>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+    │ └ <function PreparedRequest.prepare at 0x1041b74c0>
+    └ <PreparedRequest [POST]>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/models.py", line 319, in prepare
+    self.prepare_body(data, files, json)
+    │    │            │     │      └ None
+    │    │            │     └ {'photo': <telebot.types.InputMediaPhoto object at 0x108953310>}
+    │    │            └ {}
+    │    └ <function PreparedRequest.prepare_body at 0x1041b78b0>
+    └ <PreparedRequest [POST]>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/models.py", line 512, in prepare_body
+    (body, content_type) = self._encode_files(files, data)
+     │     │               │    │             │      └ {}
+     │     │               │    │             └ {'photo': <telebot.types.InputMediaPhoto object at 0x108953310>}
+     │     │               │    └ <staticmethod object at 0x104198640>
+     │     │               └ <PreparedRequest [POST]>
+     │     └ None
+     └ None
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/models.py", line 169, in _encode_files
+    body, content_type = encode_multipart_formdata(new_fields)
+                         │                         └ [<urllib3.fields.RequestField object at 0x1089531f0>]
+                         └ <function encode_multipart_formdata at 0x103ed2160>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/urllib3/filepost.py", line 90, in encode_multipart_formdata
+    body.write(data)
+    │    │     └ <telebot.types.InputMediaPhoto object at 0x108953310>
+    │    └ <method 'write' of '_io.BytesIO' objects>
+    └ <_io.BytesIO object at 0x108947e50>
+
+TypeError: a bytes-like object is required, not 'InputMediaPhoto'
+2021-09-24 21:02:20.144 | DEBUG    | bot.services.posts.add:publicate:247 - Exiting 'send_post' (result=None)
+2021-09-24 21:02:20.446 | DEBUG    | bot.services.posts.add:publicate:247 - Entering 'send_post' (args=(), kwargs={'chat_id': 987671950, 'post_id': 6, 'new': True})
+2021-09-24 21:02:20.473 | ERROR    | bot.services.check_posts:send_post:61 - Error in output POSTS
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x10300f1f0>
+    └ <WorkerThread(WorkerThread2, started daemon 6163886080)>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x103cfb9d0>
+    └ <WorkerThread(WorkerThread2, started daemon 6163886080)>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x10892ed60>,)
+    └ <function publicate at 0x10429d310>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (<telebot.types.Message object at 0x10892ed60>,)
+             └ <function publicate at 0x10429d280>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/posts/add.py", line 247, in publicate
+    send_post(chat_id=user.id,
+    │                 │    └ <peewee.FieldAccessor object at 0x103904280>
+    │                 └ <Users: 987671950>
+    └ <function send_post at 0x10428f670>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {'chat_id': 987671950, 'post_id': 6, 'new': True}
+             │     └ ()
+             └ <function send_post at 0x10428f5e0>
+
+> File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 54, in send_post
+    bot.send_photo(chat_id=chat_id,
+    │   │                  └ 987671950
+    │   └ <function TeleBot.send_photo at 0x1041d8f70>
+    └ <telebot.TeleBot object at 0x103c96e50>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/__init__.py", line 1038, in send_photo
+    apihelper.send_photo(
+    │         └ <function send_photo at 0x1041c4940>
+    └ <module 'telebot.apihelper' from '/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/tel...
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 466, in send_photo
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+           │             │      │                  │              └ {'photo': <telebot.types.InputMediaPhoto object at 0x108953670>}
+           │             │      │                  └ {'chat_id': 987671950, 'reply_markup': <function post_change_menu at 0x1041ee9d0>, 'parse_mode': 'html'}
+           │             │      └ 'sendPhoto'
+           │             └ '889368628:AAGO10iS0nVkRlbvQre_OpgjDG2qlEbsK4s'
+           └ <function _make_request at 0x103d8b820>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 139, in _make_request
+    result = _get_req_session().request(
+             └ <function _get_req_session at 0x103d8b790>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+           │    │               └ <Request [POST]>
+           │    └ <function Session.prepare_request at 0x1041cbf70>
+           └ <requests.sessions.Session object at 0x10892e910>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+    │ └ <function PreparedRequest.prepare at 0x1041b74c0>
+    └ <PreparedRequest [POST]>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/models.py", line 319, in prepare
+    self.prepare_body(data, files, json)
+    │    │            │     │      └ None
+    │    │            │     └ {'photo': <telebot.types.InputMediaPhoto object at 0x108953670>}
+    │    │            └ {}
+    │    └ <function PreparedRequest.prepare_body at 0x1041b78b0>
+    └ <PreparedRequest [POST]>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/models.py", line 512, in prepare_body
+    (body, content_type) = self._encode_files(files, data)
+     │     │               │    │             │      └ {}
+     │     │               │    │             └ {'photo': <telebot.types.InputMediaPhoto object at 0x108953670>}
+     │     │               │    └ <staticmethod object at 0x104198640>
+     │     │               └ <PreparedRequest [POST]>
+     │     └ None
+     └ None
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/models.py", line 169, in _encode_files
+    body, content_type = encode_multipart_formdata(new_fields)
+                         │                         └ [<urllib3.fields.RequestField object at 0x108953910>]
+                         └ <function encode_multipart_formdata at 0x103ed2160>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/urllib3/filepost.py", line 90, in encode_multipart_formdata
+    body.write(data)
+    │    │     └ <telebot.types.InputMediaPhoto object at 0x108953670>
+    │    └ <method 'write' of '_io.BytesIO' objects>
+    └ <_io.BytesIO object at 0x108950c20>
+
+TypeError: a bytes-like object is required, not 'InputMediaPhoto'
+2021-09-24 21:02:20.595 | ERROR    | bot.util:send_message:33 - Error in send_message cause - A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bot can't initiate conversation with a user, chat_id - 987671950
+2021-09-24 21:02:20.596 | DEBUG    | bot.services.posts.add:publicate:247 - Exiting 'send_post' (result=None)
+2021-09-24 21:02:20.828 | DEBUG    | telebot.util:run:82 - Entering 'post_menu' (args=(<telebot.types.Message object at 0x1089410d0>,), kwargs={})
+2021-09-24 21:02:20.898 | DEBUG    | telebot.util:run:82 - Exiting 'publicate' (result=None)
+2021-09-24 21:02:20.949 | DEBUG    | telebot.util:run:82 - Exiting 'post_menu' (result=None)
+2021-09-24 21:02:24.181 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10892ecd0>,), kwargs={})
+2021-09-24 21:02:24.224 | DEBUG    | bot.services.check_posts:output_posts:81 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6})
+2021-09-24 21:02:24.250 | ERROR    | bot.services.check_posts:send_post:61 - Error in output POSTS
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x10300f1f0>
+    └ <WorkerThread(WorkerThread2, started daemon 6163886080)>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x103cfb9d0>
+    └ <WorkerThread(WorkerThread2, started daemon 6163886080)>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x10892ecd0>,)
+    └ <function all_posts at 0x10428fb80>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (<telebot.types.Message object at 0x10892ecd0>,)
+             └ <function all_posts at 0x10428faf0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 97, in all_posts
+    output_posts_by_category(chat_id=chat_id)
+    │                                └ 704369002
+    └ <function output_posts_by_category at 0x10428fa60>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 187, in output_posts_by_category
+    output_posts(chat_id=chat_id,
+    │                    └ 704369002
+    └ <function output_posts at 0x10428f700>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 81, in output_posts
+    send_post(chat_id=chat_id,
+    │                 └ 704369002
+    └ <function send_post at 0x10428f670>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {'chat_id': 704369002, 'post_id': 6}
+             │     └ ()
+             └ <function send_post at 0x10428f5e0>
+
+> File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 54, in send_post
+    bot.send_photo(chat_id=chat_id,
+    │   │                  └ 704369002
+    │   └ <function TeleBot.send_photo at 0x1041d8f70>
+    └ <telebot.TeleBot object at 0x103c96e50>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/__init__.py", line 1038, in send_photo
+    apihelper.send_photo(
+    │         └ <function send_photo at 0x1041c4940>
+    └ <module 'telebot.apihelper' from '/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/tel...
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 466, in send_photo
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+           │             │      │                  │              └ {'photo': <telebot.types.InputMediaPhoto object at 0x108a411c0>}
+           │             │      │                  └ {'chat_id': 704369002, 'reply_markup': <function post_change_menu at 0x1041ee9d0>, 'parse_mode': 'html'}
+           │             │      └ 'sendPhoto'
+           │             └ '889368628:AAGO10iS0nVkRlbvQre_OpgjDG2qlEbsK4s'
+           └ <function _make_request at 0x103d8b820>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 139, in _make_request
+    result = _get_req_session().request(
+             └ <function _get_req_session at 0x103d8b790>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+           │    │               └ <Request [POST]>
+           │    └ <function Session.prepare_request at 0x1041cbf70>
+           └ <requests.sessions.Session object at 0x10892e910>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+    │ └ <function PreparedRequest.prepare at 0x1041b74c0>
+    └ <PreparedRequest [POST]>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/models.py", line 319, in prepare
+    self.prepare_body(data, files, json)
+    │    │            │     │      └ None
+    │    │            │     └ {'photo': <telebot.types.InputMediaPhoto object at 0x108a411c0>}
+    │    │            └ {}
+    │    └ <function PreparedRequest.prepare_body at 0x1041b78b0>
+    └ <PreparedRequest [POST]>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/models.py", line 512, in prepare_body
+    (body, content_type) = self._encode_files(files, data)
+     │     │               │    │             │      └ {}
+     │     │               │    │             └ {'photo': <telebot.types.InputMediaPhoto object at 0x108a411c0>}
+     │     │               │    └ <staticmethod object at 0x104198640>
+     │     │               └ <PreparedRequest [POST]>
+     │     └ None
+     └ None
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/requests/models.py", line 169, in _encode_files
+    body, content_type = encode_multipart_formdata(new_fields)
+                         │                         └ [<urllib3.fields.RequestField object at 0x108a41070>]
+                         └ <function encode_multipart_formdata at 0x103ed2160>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/urllib3/filepost.py", line 90, in encode_multipart_formdata
+    body.write(data)
+    │    │     └ <telebot.types.InputMediaPhoto object at 0x108a411c0>
+    │    └ <method 'write' of '_io.BytesIO' objects>
+    └ <_io.BytesIO object at 0x1089509f0>
+
+TypeError: a bytes-like object is required, not 'InputMediaPhoto'
+2021-09-24 21:02:24.417 | DEBUG    | bot.services.check_posts:output_posts:81 - Exiting 'send_post' (result=None)
+2021-09-24 21:02:24.855 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 21:03:00.916 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 21:03:00.916 | INFO     | bot:<module>:4 - Import services
+2021-09-24 21:03:01.144 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 21:03:01.145 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 21:03:02.118 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10a1eea30>,), kwargs={})
+2021-09-24 21:03:02.182 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6})
+2021-09-24 21:03:02.515 | ERROR    | bot.services.check_posts:send_post:62 - Error in output POSTS
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x1048d31f0>
+    └ <WorkerThread(WorkerThread1, started daemon 6121091072)>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x1055bf9d0>
+    └ <WorkerThread(WorkerThread1, started daemon 6121091072)>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x10a1eea30>,)
+    └ <function all_posts at 0x105b53af0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (<telebot.types.Message object at 0x10a1eea30>,)
+             └ <function all_posts at 0x105b53a60>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 98, in all_posts
+    output_posts_by_category(chat_id=chat_id)
+    │                                └ 704369002
+    └ <function output_posts_by_category at 0x105b539d0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 188, in output_posts_by_category
+    output_posts(chat_id=chat_id,
+    │                    └ 704369002
+    └ <function output_posts at 0x105b53670>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 82, in output_posts
+    send_post(chat_id=chat_id,
+    │                 └ 704369002
+    └ <function send_post at 0x105b535e0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {'chat_id': 704369002, 'post_id': 6}
+             │     └ ()
+             └ <function send_post at 0x105b53550>
+
+> File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 54, in send_post
+    bot.send_photo(chat_id=chat_id,
+    │   │                  └ 704369002
+    │   └ <function TeleBot.send_photo at 0x105a9cf70>
+    └ <telebot.TeleBot object at 0x10556c130>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/__init__.py", line 1038, in send_photo
+    apihelper.send_photo(
+    │         └ <function send_photo at 0x105a87940>
+    └ <module 'telebot.apihelper' from '/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/tel...
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 466, in send_photo
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+           │             │      │                  │              └ None
+           │             │      │                  └ {'chat_id': 704369002, 'photo': 'AgACAgIAAxkBAAJ87WFOEqShJuRqky2YRTsiQeBqYvjrAAK9tTEbGZJxSqL50jO1iyn7AQADAgADeQADIQQ', 'capti...
+           │             │      └ 'sendPhoto'
+           │             └ '889368628:AAGO10iS0nVkRlbvQre_OpgjDG2qlEbsK4s'
+           └ <function _make_request at 0x10564f820>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 145, in _make_request
+    json_result = _check_result(method_name, result)
+                  │             │            └ <Response [400]>
+                  │             └ 'sendPhoto'
+                  └ <function _check_result at 0x10564f8b0>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 172, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+          │                    │            │       └ {'ok': False, 'error_code': 400, 'description': "Bad Request: can't parse reply keyboard markup JSON object"}
+          │                    │            └ <Response [400]>
+          │                    └ 'sendPhoto'
+          └ <class 'telebot.apihelper.ApiTelegramException'>
+
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse reply keyboard markup JSON object
+2021-09-24 21:03:02.785 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-24 21:03:03.274 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 21:03:21.911 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 21:03:21.911 | INFO     | bot:<module>:4 - Import services
+2021-09-24 21:03:22.086 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 21:03:22.086 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 21:03:23.101 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10a45d760>,), kwargs={})
+2021-09-24 21:03:23.136 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6})
+2021-09-24 21:03:23.155 | ERROR    | bot.services.check_posts:send_post:62 - Error in output POSTS
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x104b6f1f0>
+    └ <WorkerThread(WorkerThread1, started daemon 6118551552)>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x1058379d0>
+    └ <WorkerThread(WorkerThread1, started daemon 6118551552)>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x10a45d760>,)
+    └ <function all_posts at 0x105dc3af0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (<telebot.types.Message object at 0x10a45d760>,)
+             └ <function all_posts at 0x105dc3a60>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 98, in all_posts
+    output_posts_by_category(chat_id=chat_id)
+    │                                └ 704369002
+    └ <function output_posts_by_category at 0x105dc39d0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 188, in output_posts_by_category
+    output_posts(chat_id=chat_id,
+    │                    └ 704369002
+    └ <function output_posts at 0x105dc3670>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 82, in output_posts
+    send_post(chat_id=chat_id,
+    │                 └ 704369002
+    └ <function send_post at 0x105dc35e0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {'chat_id': 704369002, 'post_id': 6}
+             │     └ ()
+             └ <function send_post at 0x105dc3550>
+
+> File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 54, in send_post
+    bot.send_photo(chat_id=chat_id,
+    │   │                  └ 704369002
+    │   └ <function TeleBot.send_photo at 0x105d14f70>
+    └ <telebot.TeleBot object at 0x1057e4130>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/__init__.py", line 1038, in send_photo
+    apihelper.send_photo(
+    │         └ <function send_photo at 0x105cff940>
+    └ <module 'telebot.apihelper' from '/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/tel...
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 455, in send_photo
+    payload['reply_markup'] = _convert_markup(reply_markup)
+    │                         │               └ <telebot.types.InlineKeyboardMarkup object at 0x10a462910>
+    │                         └ <function _convert_markup at 0x105d0d9d0>
+    └ {'chat_id': 704369002, 'photo': 'AgACAgIAAxkBAAJ87WFOEqShJuRqky2YRTsiQeBqYvjrAAK9tTEbGZJxSqL50jO1iyn7AQADAgADeQADIQQ', 'capti...
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 1557, in _convert_markup
+    return markup.to_json()
+           │      └ <function InlineKeyboardMarkup.to_json at 0x1058b4700>
+           └ <telebot.types.InlineKeyboardMarkup object at 0x10a462910>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/types.py", line 1079, in to_json
+    return json.dumps(self.to_dict())
+           │    │     │    └ <function InlineKeyboardMarkup.to_dict at 0x1058b4790>
+           │    │     └ <telebot.types.InlineKeyboardMarkup object at 0x10a462910>
+           │    └ <function dumps at 0x10533d790>
+           └ <module 'json' from '/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/json/__init__.py'>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/types.py", line 1083, in to_dict
+    json_dict['inline_keyboard'] = [[button.to_dict() for button in row] for row in self.keyboard]
+    │                                                                               │    └ [[<generator object post_change_menu.<locals>.<genexpr> at 0x10a4556d0>]]
+    │                                                                               └ <telebot.types.InlineKeyboardMarkup object at 0x10a462910>
+    └ {}
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/types.py", line 1083, in <listcomp>
+    json_dict['inline_keyboard'] = [[button.to_dict() for button in row] for row in self.keyboard]
+                                                                    │        └ [<generator object post_change_menu.<locals>.<genexpr> at 0x10a4556d0>]
+                                                                    └ [<generator object post_change_menu.<locals>.<genexpr> at 0x10a4556d0>]
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/types.py", line 1083, in <listcomp>
+    json_dict['inline_keyboard'] = [[button.to_dict() for button in row] for row in self.keyboard]
+                                     │                    └ <generator object post_change_menu.<locals>.<genexpr> at 0x10a4556d0>
+                                     └ <generator object post_change_menu.<locals>.<genexpr> at 0x10a4556d0>
+
+AttributeError: 'generator' object has no attribute 'to_dict'
+2021-09-24 21:03:23.436 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-24 21:03:23.838 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 21:03:32.427 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 21:03:32.427 | INFO     | bot:<module>:4 - Import services
+2021-09-24 21:03:32.652 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 21:03:32.653 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 21:03:35.816 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x107729dc0>,), kwargs={})
+2021-09-24 21:03:35.876 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6})
+2021-09-24 21:03:36.345 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-24 21:03:36.901 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 21:03:53.954 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 21:03:53.954 | INFO     | bot:<module>:4 - Import services
+2021-09-24 21:03:54.131 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 21:03:54.132 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 21:03:56.005 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x107f6c730>,), kwargs={})
+2021-09-24 21:03:56.062 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6})
+2021-09-24 21:03:56.486 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-24 21:03:56.905 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 21:04:26.371 | DEBUG    | bot.services.check_posts:output_posts_by_category:148 - Entering 'all_posts' (args=(), kwargs={'message': <telebot.types.Message object at 0x107f6c520>})
+2021-09-24 21:04:26.441 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6})
+2021-09-24 21:04:26.840 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-24 21:04:27.243 | DEBUG    | bot.services.check_posts:output_posts_by_category:148 - Exiting 'all_posts' (result=None)
+2021-09-24 21:04:30.995 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x107f6cf10>,), kwargs={})
+2021-09-24 21:04:31.073 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6})
+2021-09-24 21:04:31.236 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-24 21:04:31.671 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 22:09:09.790 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 22:09:09.790 | INFO     | bot:<module>:4 - Import services
+2021-09-24 22:09:09.997 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 22:09:09.997 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 22:09:10.317 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x1069dc280>,), kwargs={})
+2021-09-24 22:09:10.366 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6})
+2021-09-24 22:09:10.706 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-24 22:09:11.168 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 22:09:39.740 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 22:09:39.740 | INFO     | bot:<module>:4 - Import services
+2021-09-24 22:09:39.986 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 22:09:39.987 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 22:09:40.960 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x106718c40>,), kwargs={})
+2021-09-24 22:09:41.023 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 6})
+2021-09-24 22:09:41.368 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-24 22:09:41.777 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 22:11:39.085 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 22:11:39.085 | INFO     | bot:<module>:4 - Import services
+2021-09-24 22:11:39.277 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 22:11:39.278 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 22:11:45.437 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x106465d30>,), kwargs={})
+2021-09-24 22:11:45.625 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-24 23:56:32.842 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 23:56:32.842 | INFO     | bot:<module>:4 - Import services
+2021-09-24 23:56:33.026 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 23:56:33.026 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 23:56:39.923 | DEBUG    | telebot.util:run:82 - Entering 'start_create_post' (args=(<telebot.types.Message object at 0x104f22c40>,), kwargs={})
+2021-09-24 23:56:40.203 | DEBUG    | telebot.util:run:82 - Exiting 'start_create_post' (result=None)
+2021-09-24 23:56:41.846 | DEBUG    | telebot.util:run:82 - Entering 'set_title' (args=(<telebot.types.Message object at 0x104f44640>,), kwargs={})
+2021-09-24 23:56:41.980 | DEBUG    | telebot.util:run:82 - Exiting 'set_title' (result=None)
+2021-09-24 23:56:42.528 | DEBUG    | telebot.util:run:82 - Entering 'set_description' (args=(<telebot.types.Message object at 0x104f22a90>,), kwargs={})
+2021-09-24 23:56:42.673 | DEBUG    | telebot.util:run:82 - Exiting 'set_description' (result=None)
+2021-09-24 23:56:43.454 | DEBUG    | telebot.util:run:82 - Entering 'set_price' (args=(<telebot.types.Message object at 0x104825430>,), kwargs={})
+2021-09-24 23:56:43.590 | DEBUG    | telebot.util:run:82 - Exiting 'set_price' (result=None)
+2021-09-24 23:56:50.025 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x104f44070>,), kwargs={})
+2021-09-24 23:56:50.249 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-24 23:56:51.389 | DEBUG    | telebot.util:run:82 - Entering 'set_picture' (args=(<telebot.types.Message object at 0x104825430>,), kwargs={})
+2021-09-24 23:56:51.533 | DEBUG    | telebot.util:run:82 - Exiting 'set_picture' (result=None)
+2021-09-24 23:56:53.732 | DEBUG    | telebot.util:run:82 - Entering 'set_phone_number' (args=(<telebot.types.Message object at 0x104f44640>,), kwargs={})
+2021-09-24 23:56:53.887 | DEBUG    | telebot.util:run:82 - Exiting 'set_phone_number' (result=None)
+2021-09-24 23:56:54.551 | DEBUG    | telebot.util:run:82 - Entering 'set_username' (args=(<telebot.types.Message object at 0x104f44400>,), kwargs={})
+2021-09-24 23:56:54.567 | DEBUG    | bot.services.posts.add:set_username:216 - Entering 'get_preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-24 23:56:54.568 | DEBUG    | bot.services.posts.add:get_preview_post:226 - Entering 'preview_post' (args=(), kwargs={'chat_id': 704369002})
+2021-09-24 23:56:54.702 | DEBUG    | bot.services.posts.add:get_preview_post:226 - Exiting 'preview_post' (result=None)
+2021-09-24 23:56:54.839 | DEBUG    | bot.services.posts.add:set_username:216 - Exiting 'get_preview_post' (result=None)
+2021-09-24 23:56:54.839 | DEBUG    | telebot.util:run:82 - Exiting 'set_username' (result=None)
+2021-09-24 23:56:56.885 | DEBUG    | telebot.util:run:82 - Entering 'publicate' (args=(<telebot.types.Message object at 0x10481f4c0>,), kwargs={})
+2021-09-24 23:56:57.089 | DEBUG    | bot.services.posts.add:publicate:247 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 7, 'new': True})
+2021-09-24 23:56:57.249 | DEBUG    | bot.services.posts.add:publicate:247 - Exiting 'send_post' (result=None)
+2021-09-24 23:56:57.555 | DEBUG    | bot.services.posts.add:publicate:247 - Entering 'send_post' (args=(), kwargs={'chat_id': 987671950, 'post_id': 7, 'new': True})
+2021-09-24 23:56:57.824 | ERROR    | bot.services.check_posts:send_post:62 - Error in output POSTS
+Traceback (most recent call last):
+
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x10362b1f0>
+    └ <WorkerThread(WorkerThread1, started daemon 6140653568)>
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x1043179d0>
+    └ <WorkerThread(WorkerThread1, started daemon 6140653568)>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/util.py", line 82, in run
+    task(*args, **kwargs)
+    │     │       └ {}
+    │     └ (<telebot.types.Message object at 0x10481f4c0>,)
+    └ <function publicate at 0x1048b9430>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (<telebot.types.Message object at 0x10481f4c0>,)
+             └ <function publicate at 0x1048b93a0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/posts/add.py", line 247, in publicate
+    send_post(chat_id=user.id,
+    │                 │    └ <peewee.FieldAccessor object at 0x103f20280>
+    │                 └ <Users: 987671950>
+    └ <function send_post at 0x1048ad790>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/general_config.py", line 15, in wrapped
+    result = func(*args, **kwargs)
+             │     │       └ {'chat_id': 987671950, 'post_id': 7, 'new': True}
+             │     └ ()
+             └ <function send_post at 0x1048ad700>
+
+> File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/bot/services/check_posts.py", line 54, in send_post
+    bot.send_photo(chat_id=chat_id,
+    │   │                  └ 987671950
+    │   └ <function TeleBot.send_photo at 0x1047f6040>
+    └ <telebot.TeleBot object at 0x1042b2eb0>
+
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/__init__.py", line 1038, in send_photo
+    apihelper.send_photo(
+    │         └ <function send_photo at 0x1047df9d0>
+    └ <module 'telebot.apihelper' from '/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/tel...
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 466, in send_photo
+    return _make_request(token, method_url, params=payload, files=files, method='post')
+           │             │      │                  │              └ None
+           │             │      │                  └ {'chat_id': 987671950, 'photo': 'AgACAgIAAxkBAAJ9JWFOO5JAbzHsA0ouyRMihBRwKmSbAAK9tTEbGZJxSqL50jO1iyn7AQADAgADeQADIQQ', 'capti...
+           │             │      └ 'sendPhoto'
+           │             └ '889368628:AAGO10iS0nVkRlbvQre_OpgjDG2qlEbsK4s'
+           └ <function _make_request at 0x1043a78b0>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 145, in _make_request
+    json_result = _check_result(method_name, result)
+                  │             │            └ <Response [403]>
+                  │             └ 'sendPhoto'
+                  └ <function _check_result at 0x1043a7940>
+  File "/Users/nikitakurkurin/PycharmProjects/bot_clothes_shop/venv/lib/python3.9/site-packages/telebot/apihelper.py", line 172, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+          │                    │            │       └ {'ok': False, 'error_code': 403, 'description': "Forbidden: bot can't initiate conversation with a user"}
+          │                    │            └ <Response [403]>
+          │                    └ 'sendPhoto'
+          └ <class 'telebot.apihelper.ApiTelegramException'>
+
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bot can't initiate conversation with a user
+2021-09-24 23:56:57.971 | ERROR    | bot.util:send_message:33 - Error in send_message cause - A request to the Telegram API was unsuccessful. Error code: 403. Description: Forbidden: bot can't initiate conversation with a user, chat_id - 987671950
+2021-09-24 23:56:57.972 | DEBUG    | bot.services.posts.add:publicate:247 - Exiting 'send_post' (result=None)
+2021-09-24 23:56:58.275 | DEBUG    | telebot.util:run:82 - Exiting 'publicate' (result=None)
+2021-09-24 23:57:42.824 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 23:57:42.824 | INFO     | bot:<module>:4 - Import services
+2021-09-24 23:57:43.077 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 23:57:43.077 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 23:58:15.498 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 23:58:15.498 | INFO     | bot:<module>:4 - Import services
+2021-09-24 23:58:15.661 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 23:58:15.662 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-24 23:59:04.152 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-24 23:59:04.152 | INFO     | bot:<module>:4 - Import services
+2021-09-24 23:59:04.339 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-24 23:59:04.340 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:02:04.811 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-25 00:02:04.811 | INFO     | bot:<module>:4 - Import services
+2021-09-25 00:02:04.992 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-25 00:02:04.992 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:02:13.216 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x1042269a0>,), kwargs={})
+2021-09-25 00:02:13.272 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 7})
+2021-09-25 00:02:13.568 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-25 00:02:13.998 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-25 00:02:25.944 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-25 00:02:25.944 | INFO     | bot:<module>:4 - Import services
+2021-09-25 00:02:26.115 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-25 00:02:26.116 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:03:18.849 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-25 00:03:18.850 | INFO     | bot:<module>:4 - Import services
+2021-09-25 00:03:19.030 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-25 00:03:19.031 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:03:22.026 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10621c5b0>,), kwargs={})
+2021-09-25 00:03:22.082 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 7})
+2021-09-25 00:03:22.414 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-25 00:03:22.823 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-25 00:03:41.874 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-25 00:03:41.874 | INFO     | bot:<module>:4 - Import services
+2021-09-25 00:03:42.063 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-25 00:03:42.063 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:03:48.818 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x10682d700>,), kwargs={})
+2021-09-25 00:03:48.880 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 7})
+2021-09-25 00:03:49.207 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-25 00:03:49.660 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-25 00:19:13.290 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-25 00:19:13.290 | INFO     | bot:<module>:4 - Import services
+2021-09-25 00:19:13.645 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-25 00:19:13.645 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:19:19.237 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x107667d00>,), kwargs={})
+2021-09-25 00:19:19.288 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 7})
+2021-09-25 00:19:19.595 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-25 00:19:20.107 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-25 00:20:07.836 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-25 00:20:07.836 | INFO     | bot:<module>:4 - Import services
+2021-09-25 00:20:08.045 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-25 00:20:08.045 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:20:31.527 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-25 00:20:31.527 | INFO     | bot:<module>:4 - Import services
+2021-09-25 00:20:31.807 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-25 00:20:31.807 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:21:09.615 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-25 00:21:09.615 | INFO     | bot:<module>:4 - Import services
+2021-09-25 00:21:10.017 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-25 00:21:10.018 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:21:10.992 | DEBUG    | telebot.util:run:82 - Entering 'all_posts' (args=(<telebot.types.Message object at 0x106a42340>,), kwargs={})
+2021-09-25 00:21:11.056 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 7})
+2021-09-25 00:21:11.380 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-25 00:21:11.794 | DEBUG    | telebot.util:run:82 - Exiting 'all_posts' (result=None)
+2021-09-25 00:21:17.270 | DEBUG    | bot.services.check_posts:output_posts:82 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': 7})
+2021-09-25 00:21:17.419 | DEBUG    | bot.services.check_posts:output_posts:82 - Exiting 'send_post' (result=None)
+2021-09-25 00:22:55.945 | INFO     | bot.services:<module>:4 - Import services - categories, posts, start, admins
+2021-09-25 00:22:55.946 | INFO     | bot:<module>:4 - Import services
+2021-09-25 00:22:56.133 | SUCCESS  | database.util:create_tables:12 - Success create all tables
+2021-09-25 00:22:56.133 | INFO     | bot.util:start_bot:21 - Bot Started
+2021-09-25 00:23:07.289 | DEBUG    | bot.services.posts.change:set_price:95 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': '7'})
+2021-09-25 00:23:07.634 | DEBUG    | bot.services.posts.change:set_price:95 - Exiting 'send_post' (result=None)
+2021-09-25 00:23:20.879 | DEBUG    | bot.services.posts.change:set_description:54 - Entering 'send_post' (args=(), kwargs={'chat_id': 704369002, 'post_id': '7'})
+2021-09-25 00:23:21.027 | DEBUG    | bot.services.posts.change:set_description:54 - Exiting 'send_post' (result=None)

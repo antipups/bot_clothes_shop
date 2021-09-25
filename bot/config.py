@@ -4,9 +4,7 @@ from general_config import *
 class Constants:
     class Telegram:
         Token = '889368628:AAGO10iS0nVkRlbvQre_OpgjDG2qlEbsK4s'
-
-        Admins = (704369002,
-                  )
+        # Token = '2004451012:AAGcliDDCZ3zvWPJllyA5c5CnnY8BgG52Ok'
 
 
 class Commands:
@@ -60,9 +58,17 @@ class Button:
         SendPost = '📮 Опубликовать'
         Reset = '🔄 Создать объявление заново'
 
+    class Posts:
+        New = '🆕 Новое объявление'
+        Remove = '🗑 Удалить'
+        Change = '🔄 Изменить'
+
+        Description = '📝 Описание'
+        Price = '💰 Цена'
+
 
 class Keyboard:
-    StartMenuAdmin = [[Button.StartMenuAdmin.NewPost, Button.StartMenuAdmin.Categories, Button.StartMenuAdmin.NewAdmin],
+    StartMenuAdmin = [[Button.Posts.New, Button.StartMenuAdmin.Categories, Button.StartMenuAdmin.NewAdmin],
                       [Button.StartMenuAdmin.Posts]]
     StartMenuUsual = [[Button.StartMenuUsual.CheckPosts, Button.StartMenuUsual.CertainPosts]]
 
@@ -70,8 +76,15 @@ class Keyboard:
 
     CreatePost = [[Button.CreatePost.Reset, Button.CreatePost.SendPost]]
 
+    PostMenu = [[Button.Posts.Change, Button.Posts.Remove]]
+    ChangePost = [[Button.Posts.Description, Button.Posts.Price]]
+
 
 class Callbacks:
+
+    ChangePost = 'chpost_{}'
+    ChangeInlinePost = 'chin_{}'
+
     class Category:
         Remove = 'rmcat_{}'
         Change = 'cncat_{}'
@@ -100,8 +113,10 @@ class Messages:
 
         ChoisePostsCategory = '☝️ Выберите интересующую <b>вас</b> категорию'
         CategoryPosts = '📥 Объявления в категории <b>"{}"</b> выведены выше'
-        AllPosts = '📥 Объявления выведены выше'
+        AllPosts = '📥 Объявления выведены <b>выше</b>'
         CategoryNotPosts = '😖 В данной категории на данный момент <b>нет объявлений</b>'
+
+        ChangeChoise = '🤔 <b>Что вы хотите изменить в <b>данном</b> объявлении?</b>'
 
     class Admin:
         class Categories:
@@ -157,5 +172,5 @@ class Messages:
             SuccessSendPost = '😊 Объявление было успешно <b>опубликовано</b>.\n' \
                               '📬 Рассылка данного объявления запущена'
 
-
-
+        class Posts:
+            ChoisePostsAction = '🤔 Что вы хотите сделать?'

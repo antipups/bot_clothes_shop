@@ -50,8 +50,14 @@ def send_post(chat_id: int, post_id: int, new: bool = False):
     photos[0].caption, photos[0].parse_mode = caption, 'html'
 
     try:
-        bot.send_media_group(chat_id=chat_id,
-                             media=photos)
+        if db_util.UsersWork.is_admin(chat_id=chat_id):
+            bot.send_photo(chat_id=chat_id,
+                           photo=photos[0].media,
+                           caption=photos[0].caption,
+                           reply_markup=markups.post_change_menu(post_id=post_id))
+        else:
+            bot.send_media_group(chat_id=chat_id,
+                                 media=photos)
     except Exception as e:
         logger.exception('Error in output POSTS')
         send_message(chat_id=chat_id,
@@ -67,7 +73,8 @@ def post_menu(message: Message):
                  reply_markup=markups.post_menu())
 
 
-def output_posts(chat_id: int, category_id: Union[str, int] = None):
+def output_posts(chat_id: int,
+                 category_id: Union[str, int] = None):
     offset = db_util.SessionWork.get(chat_id=chat_id,
                                      key='offset')
     posts_offset = offset * db_util.Constants.OutputAmountPostsLimit
@@ -121,7 +128,15 @@ def set_change_category(message: Message):
                                 value=0)
 
 
-def output_posts_by_category(message: Message = None, chat_id: int = 0):
+def output_posts_by_category(message: Message = None,
+                             chat_id: int = 0):
+    """
+        Вывод объявлений по категориям
+    :param message: если кликнули на какую-то кнопку после вывода первой страницы категорий
+    :param chat_id: вывод первой страницы категории по данному параметру
+    :param admin: если админ к категориям клеим ещё вывод клавиатуры
+    :return:
+    """
     if message:
         chat_id, text, message_id = get_info_from_message(message=message)
 
@@ -148,13 +163,24 @@ def output_posts_by_category(message: Message = None, chat_id: int = 0):
                                 value=db_util.SessionWork.get(chat_id=chat_id,
                                                               key='offset') - 1)
 
+    get_step_hendler_for_search(chat_id=chat_id)
+
+
+def get_step_hendler_for_search(chat_id: int, all_post_output: bool = True):
+    """
+        Генерация просмотра постов для пользователя и админа с клавиатурой
+    :param chat_id: кому выводим
+    :param all_post_output: все посты или нет (если редактирование - не выводим, только вешаем обработчик)
+    :return:
+    """
     category_id = db_util.SessionWork.get(chat_id=chat_id,
                                           key='parent_id')
     if posts := db_util.PostWork.get_posts(category_id=category_id):
         if category_id:
-            breadcrumbs = list(category.title for category in db_util.CategoryWork().get_all_parents(category_id=category_id)[::-1])
+            breadcrumbs = list(
+                category.title for category in db_util.CategoryWork().get_all_parents(category_id=category_id)[::-1])
             breadcrumbs[-1] = f'<u>{breadcrumbs[-1]}</u>'
-            text = Messages.Posts.CategoryPosts\
+            text = Messages.Posts.CategoryPosts \
                 .format(' -> '.join(breadcrumbs))
         else:
             text = Messages.Posts.AllPosts
@@ -170,8 +196,10 @@ def output_posts_by_category(message: Message = None, chat_id: int = 0):
             if amount_posts > offset * db_util.Constants.OutputAmountPostsLimit + db_util.Constants.OutputAmountPostsLimit:
                 next_ = True
 
-        output_posts(chat_id=chat_id,
-                     category_id=category_id)
+        if all_post_output:
+            output_posts(chat_id=chat_id,
+                         category_id=category_id)
+
         schedule_message(chat_id=chat_id,
                          text=text,
                          reply_markup=markups.post_menu(next_=next_,

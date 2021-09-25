@@ -111,3 +111,18 @@ def post_menu(next_: bool = False, prev_: bool = False):
 
     return _reply_markup(keyboard=keyboard,
                          main_menu_=True)
+
+
+def post_change_menu(post_id: int):
+    markup = InlineKeyboardMarkup()
+    markup.add(*(InlineKeyboardButton(text=button,
+                                      callback_data=Callbacks.ChangePost.format(f'{button}_{post_id}')) for row in Keyboard.PostMenu for button in row))
+    return markup
+
+
+def change_post_choise(post_id: str):
+    markup = InlineKeyboardMarkup()
+    markup.add(*(InlineKeyboardButton(text=button,
+                                      callback_data=Callbacks.ChangeInlinePost.format(f'{button}_{post_id}')) for row in
+                 Keyboard.ChangePost for button in row))
+    return markup
