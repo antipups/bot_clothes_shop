@@ -7,7 +7,6 @@ from bot.services.start import start
 from bot.util import *
 
 
-@logging()
 def preview_post(chat_id: int):
     post_data: dict = db_util.SessionWork.get(chat_id=chat_id,
                                               key='post')
@@ -31,7 +30,6 @@ def preview_post(chat_id: int):
                      text=caption)
 
 
-@logging()
 def send_post(chat_id: int, post_id: int, new: bool = False):
     post = db_util.PostWork.get_post(post_id=post_id)
 
@@ -65,7 +63,6 @@ def send_post(chat_id: int, post_id: int, new: bool = False):
 
 
 @bot.message_handler(func=lambda message: message.text == Button.StartMenuAdmin.Posts)
-@logging()
 def post_menu(message: Message):
     chat_id, text, message_id = get_info_from_message(message=message)
     send_message(chat_id=chat_id,
@@ -86,7 +83,6 @@ def output_posts(chat_id: int,
 
 @bot.message_handler(func=lambda message: message.text == Button.StartMenuUsual.CheckPosts)
 @bot.message_handler(commands=Commands.All)
-@logging()
 def all_posts(message: Message):
     chat_id, text, message_id = get_info_from_message(message=message)
     db_util.SessionWork.set(chat_id=chat_id,
@@ -100,7 +96,6 @@ def all_posts(message: Message):
 
 @bot.message_handler(func=lambda message: message.text == Button.StartMenuUsual.CertainPosts)
 @bot.message_handler(commands=Commands.Categories)
-@logging()
 def categories_posts(message: Message):
     print('sex')
     chat_id, text, message_id = get_info_from_message(message=message)

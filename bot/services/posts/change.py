@@ -5,7 +5,6 @@ from bot.validators import Validator
 
 @bot.callback_query_handler(func=lambda message: callback_handler(message, Callbacks.ChangePost) and
                                                  Button.Posts.Change in message.data)
-@logging()
 def change_post(message: CallbackQuery):
     chat_id, text, message_id = get_info_from_message(message=message,
                                                       callback_str=Callbacks.ChangePost)
@@ -17,7 +16,6 @@ def change_post(message: CallbackQuery):
 
 @bot.callback_query_handler(func=lambda message: callback_handler(message, Callbacks.ChangeInlinePost) and
                                                  Button.Posts.Description in message.data)
-@logging()
 def change_description(message: CallbackQuery):
     chat_id, text, message_id = get_info_from_message(message=message,
                                                       callback_str=Callbacks.ChangeInlinePost)
@@ -64,7 +62,6 @@ def set_description(message: Message):
 
 @bot.callback_query_handler(func=lambda message: callback_handler(message, Callbacks.ChangeInlinePost) and
                                                  Button.Posts.Price in message.data)
-@logging()
 def change_price(message: CallbackQuery):
     chat_id, text, message_id = get_info_from_message(message=message,
                                                       callback_str=Callbacks.ChangeInlinePost)

@@ -3,8 +3,7 @@ from general_config import *
 
 class Constants:
     class Telegram:
-        Token = '889368628:AAGO10iS0nVkRlbvQre_OpgjDG2qlEbsK4s'
-        # Token = '2004451012:AAGcliDDCZ3zvWPJllyA5c5CnnY8BgG52Ok'
+        Token = Token
 
 
 class Commands:
