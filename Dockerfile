@@ -4,7 +4,6 @@ COPY bot /bot_announce
 
 WORKDIR /bot_announce
 
-ENV ip_address="176.31.34.18" TG_TOKEN="2004451012:AAGcliDDCZ3zvWPJllyA5c5CnnY8BgG52Ok"
 
 RUN pip install -r requirements.txt && \
     sed -i "s/\.\.\./$ip_address/" bot/websocket.py && \
